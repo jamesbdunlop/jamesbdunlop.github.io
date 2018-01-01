@@ -23,16 +23,16 @@ twitter_username: ""
 github_username: "jamesbdunlop"
 owner_url: "https://jamesbdunlop.github.io/"
 owner_name: "jamesbdunlop"
-msideURL: "https://github.com/jamesbdunlop/MSide"
 show_downloads: false
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
+#theme: jekyll-theme-midnight
 #theme: minima
 #theme: jekyll-theme-minimal
 #theme: jekyll-theme-hacker
-#theme: jekyll-theme-Modernist
+#theme: jekyll-theme-modernist
 #theme: jekyll-theme-Slate
+theme: jekyll-theme-dinky
 plugins:
   - jekyll-feed
 github: [metadata]
