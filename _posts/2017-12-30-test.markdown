@@ -1,13 +1,13 @@
 ---
-layout: post
-title:  "TEST"
-date:   2017-12-30 21:36:55 +1100
-categories: jekyll update
+title: TEST
+date: '2017-12-30 21:36:55 +1100'
+categories: testing
 ---
+
 This is a test edit!
 
 Jekyll also offers powerful support for code snippets:
-{% highlight python %}
+{% highlight python linenos%}
 def myTestFunction:
     this is a test
 {% endhighlight %}

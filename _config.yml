@@ -13,21 +13,29 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: jamesbdunlop
+title: jbd Dev Blog
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Here you'll find a bunch of info on my repos / maya dev as I go for 2018+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
+url: "http://anim83d.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ""
+github_username: "jamesbdunlop"
+owner_url: "https://jamesbdunlop.github.io/"
+owner_name: "jamesbdunlop"
+msideURL: "https://github.com/jamesbdunlop/MSide"
+show_downloads: false
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-midnight
+#theme: minima
+#theme: jekyll-theme-minimal
+#theme: jekyll-theme-hacker
+#theme: jekyll-theme-Modernist
+#theme: jekyll-theme-Slate
 plugins:
   - jekyll-feed
-
+github: [metadata]
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -39,3 +47,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "default"

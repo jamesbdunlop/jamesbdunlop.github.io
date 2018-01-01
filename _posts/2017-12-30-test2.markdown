@@ -1,0 +1,97 @@
+---
+title: TEST2
+date: '2017-12-30 21:36:55 +1100'
+categories: testing
+---
+# MSIDE - FAQ
+
+**What is this?**
+
+This is a simple engine for processing yaml config files for building UI's in Maya mainly focused on pulling in various
+widgets into a QMainWindow quickly and easily.
+
+An example of using this engine can be found here: https://github.com/jamesbdunlop/Nebula
+
+Currently only tested under windows and Maya 2016 using PySide to avoid any QT builds etc though this may change with 2017
+
+See the wiki for more info: https://github.com/jamesbdunlop/MSide/wiki
+
+yaml snippet for sourcing / attaching QT objects
+
+{% highlight yaml %}
+###########################
+## QMainWindow base flags
+windowTitle: nebula
+objectName: nebula
+parentToMaya: false
+onTop: false
+keyboardShortCuts: Maya
+width: 1200
+height: 800
+icon: iconmonstr-networking-7-240
+iconPath: "T:/software/Nebula/icons"
+customTitleBar: true
+customTitleBarHeader: "nucHeader"
+styleSheet: true
+styleModuleName: mainWindowStyleSheet
+styleModulePath:
+      - T:/software/Nebula/configs/mainWindows/styleSheets
+signals: none
+
+mainMenuBar:
+      name: mainMenuBar
+      active: true
+      objectName: mainMenuBar
+      moduleName: rig_mainMenuBar
+      className: MainMenu
+      modulePath:
+            - T:/software/Nebula/nebula_ui
+#######################
+### Custom UI setup now
+centerWidgets:
+## Node editor must be called before the darn model editor for some obscure reason
+  - nodeEditor:
+          windowTitle: NodeEditor
+          icon: iconmonstr-code-fork-1-240
+          active: true
+          objectName: CustomNodeEditor
+          moduleName: customNodeEditor
+          className: CustomNodeEditor
+          modulePath:
+                    - T:/software/Nebula/nebula_ui/nMayaui_core
+toolbars:
+  - RigUtilsToolBar: ## Use a custom toolbar python file in the nucleolus ui
+          windowTitle: rigToolBar
+          active: true
+          custom: true
+          objectName: RigUtilsToolBar
+          floatable: true
+          isfloating: false
+          below: true
+          icon: iconmonstr-arrow-23-240
+          configPath: ## use to process a custom yaml config for the toolbar??
+          name: RigUtils
+          area: top
+          allowedAreas:
+                      - top
+                      - bottom
+          moduleName: toolbar_rigUtils
+          className: RigUtilsToolBar
+          modulePath:
+                  - T:/software/Nebula/nebula_ui/nMayaui_rig
+docks:
+  - channelBox:
+          windowTitle: Channel Box
+          active: true
+          objectName: ChanBoxWidget
+          tabify: true
+          floating: false
+          dockWidgetVerticalTitleBar: false
+          area: right
+          allowedAreas:
+                      - right
+          moduleName: customChannelBox
+          className: ChannelBox
+          modulePath:
+                    - T:/software/Nebula/nebula_ui/nMayaui_core
+{% endhighlight %}
