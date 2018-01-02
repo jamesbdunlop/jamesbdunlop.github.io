@@ -2,6 +2,7 @@
   <nav>
     <button><a href="{{ site.owner_url }}">Home</a></button>
   <br>
+  <br>
     <h2>About</h2>
     <li class="fork"><a href="">DemoReel</a></li>
     <li class="fork"><a href="https://www.linkedin.com/in/jamesdunlop/">LinkedIN</a></li>
@@ -17,18 +18,8 @@
     <li class="fork"><a href="{{ site.url }}/MSide">MSide</a></li>
     <li class="fork"><a href="{{ site.url }}/Nebula">Nebula</a></li>
   </nav>
-  <h2>Recent Posts:</h2>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-</div><!-- end header -->
+  <br>
+  <br>
+  </nav>
+  {% include recentPosts.html %}
+</div>
