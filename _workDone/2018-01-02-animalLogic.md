@@ -4,7 +4,7 @@ layout: workDone
 roles:
     - Lead Modelling(HarryPotter Xfer)
     - Rigging
-    - Lead Rigger
+    - Lead Rigger(Peter Rabbit)
     - TVC CG Lead
     - Modelling(Film/TVC)
     - Animation(Tvc)
