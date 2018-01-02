@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: jbd Dev Blog
+title: James Dunlop
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Here you'll find a bunch of info on my repos / maya dev as I go for 2018+
@@ -23,7 +23,6 @@ twitter_username: ""
 github_username: "jamesbdunlop"
 owner_url: "https://jamesbdunlop.github.io/"
 owner_name: "jamesbdunlop"
-show_downloads: false
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-midnight
