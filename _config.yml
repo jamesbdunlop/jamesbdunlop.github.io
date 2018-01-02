@@ -30,7 +30,7 @@ markdown: kramdown
 #theme: minima
 #theme: jekyll-theme-minimal
 #theme: jekyll-theme-hacker
-theme: jekyll-theme-modernist
+theme: jekyll-theme-midnight
 #theme: jekyll-theme-Slate
 #theme: jekyll-theme-dinky
 plugins:
