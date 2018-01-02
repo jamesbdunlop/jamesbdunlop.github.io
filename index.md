@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "index"
+title: "JamesDunlop-Homepage"
 info: info.md
 ---
 
