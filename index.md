@@ -5,6 +5,7 @@ info: info.md
 ---
 <div class="body">
   {{content}}
+
   <ul class="post-list">
     {% for post in site.posts %}
         {% if post.isPost == true %}
@@ -18,7 +19,4 @@ info: info.md
         {% endif %}
     {% endfor %}
   </ul>
-
-
-
 </div>
