@@ -9,7 +9,11 @@
 <br>
 <br>
   <h2>About</h2>
+  {% if site.poseURL %}
+  <li class="fork"><a href="{{ site.postURL }}/2018/01/01/work-done.html">Recent Work</a></li>
+  {% else %}
   <li class="fork"><a href="{{ site.owner_url }}/2018/01/01/work-done.html">Recent Work</a></li>
+  {% endif %}
   <li class="fork"><a href="https://www.linkedin.com/in/jamesdunlop/">LinkedIN</a></li>
   <li class="fork"><a href="">Contact</a></li>
 <br>
