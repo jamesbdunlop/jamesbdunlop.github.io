@@ -4,7 +4,9 @@ title: "JamesDunlop-Homepage"
 info: info.md
 ---
 <div class="body">
-  {{content}}
+  {% for post in site.about %}
+    {{ post.content }}
+  {% endfor %}
 
   <ul class="post-list">
     {% for post in site.posts %}
