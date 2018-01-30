@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: codePost
 title: "om2-ResetSkinClusters"
 isPost: true
 ---
