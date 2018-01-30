@@ -1,15 +1,19 @@
 ---
 layout: default
-title: "om2 ResetSkinClusters"
+title: "om2-ResetSkinClusters"
 isPost: true
 ---
 <br>So I finally decided to get this reset working in om2 to see if I can get it going a little faster.
 <br>Hit a wee snag with the indices.. but nothing a good RTFM didn't fix.
 <br>Seems to be working. Have tested this. But not run it over a full production rig yet so there might be some cases
 <br>where it might fail.
-<br>Have put 2 uses at the bottom. Perform the reset on ALL skinClusters or just the ones found on selected geo.
+<br>
+Have put 2 uses at the bottom.
+- Perform the reset on ALL skinClusters
+- Perform the reset on skinClusters found on selected geo.
 
 {% highlight python %}
+"""2018 James Dunlop"""
 import logging
 import maya.cmds as cmds
 import maya.api.OpenMaya as om2
@@ -17,7 +21,12 @@ import maya.api.OpenMaya as om2
 logging.basicConfig()
 logger = logging.getLogger(__name__)
 
-def resetSkinClusters(skinClusters=[]):
+
+def resetSkinCluster(skinClusters=[]):
+    """
+    :param skinClusters: A python string list of the names of the skinClusters in the scene.
+    :return:
+    """
     if not skinClusters:
         logger.warning("No valid skinClusters!")
         return
@@ -28,7 +37,7 @@ def resetSkinClusters(skinClusters=[]):
 
     ## Set a MDGModifier up for setting values with
     myDGMod = om2.MDGModifier()
-    mDagPath = om2.MDagPath()
+
     ## Iter through all the skinclusters in the MSelectionList
     for x in range(mySel.length()):
         ## Get the dependNode and then the attributes of interest on the skinCluster
@@ -57,9 +66,8 @@ def resetSkinClusters(skinClusters=[]):
             ## Store this in the myDGMod for exec after we have run through all the indices.
             myDGMod.newPlugValue(bindPrePlug.elementByLogicalIndex(idx), InvMtx_matrixAsMObj)
 
-            ## And store the influence on the way through for the bindPose reset.
-            ## Try to get a fullpath to avoid nonUnique name issues
-            inf = mDagPath.getAPathTo(matrixPlug.elementByLogicalIndex(idx).source().node())
+            ## And store the influence on the way through for the bindPose reset
+            inf = om2.MFnDependencyNode(matrixPlug.elementByLogicalIndex(idx).source().node()).absoluteName()
             infuences.append(inf)
 
         ## Set all of the bindPreMatrix now.
@@ -72,8 +80,9 @@ def resetSkinClusters(skinClusters=[]):
 
         logger.info("Reset: {}".format(skClsMFnDep.name()))
 
+
 #####################################
-## Reset all SkinClusters
+####### Reset all SkinClusters
 import time
 start = time.time()
 resetSkinCluster(cmds.ls(type='skinCluster'))
@@ -81,7 +90,7 @@ logger.info("Reset took {} secs".format(start - time.time()))
 
 
 #####################################
-## Reset skinCluster from selected Geo
+####### Reset skinCluster from selected Geo
 start = time.time()
 geo = cmds.ls(sl=True)
 for eachGeo in geo:
