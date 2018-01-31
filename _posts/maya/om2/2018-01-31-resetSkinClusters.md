@@ -2,8 +2,11 @@
 layout: codePost
 title: "om2-ResetSkinClusters"
 isPost: true
+description: "Used to reset the bindPreMatrix for skinClusters after fixing joint positions on a bound mesh"
+usage: "Please see the commented code at the bottom for usage"
+lastUpdated: 01-02-2018
 ---
-<br>So I finally decided to get this reset working in om2 to see if I can get it going a little faster.
+So I finally decided to get this reset working in om2 to see if I can get it going a little faster.
 <br>Hit a wee snag with the indices.. but nothing a good RTFM didn't fix.
 <br>Seems to be working. Have tested this. But not run it over a full production rig yet so there might be some cases
 <br>where it might fail.
@@ -22,7 +25,7 @@ logging.basicConfig()
 logger = logging.getLogger(__name__)
 
 
-def resetSkinCluster(skinClusters=[]):
+def resetSkinClusters(skinClusters=[]):
     """
     :param skinClusters: A python string list of the names of the skinClusters in the scene.
     :return:
@@ -55,7 +58,7 @@ def resetSkinCluster(skinClusters=[]):
 
         ## Get a list of all the valid connected indices in the matrix array now.
         indices = matrixPlug.getExistingArrayAttributeIndices()
-        infuences = []
+        influences = []
         for idx in indices:
             ## Get the inverseMatrix plug from the source and put that into the bindPreMatrix
             connectedMObj = matrixPlug.elementByLogicalIndex(idx).source().node()
@@ -68,7 +71,7 @@ def resetSkinCluster(skinClusters=[]):
 
             ## And store the influence on the way through for the bindPose reset
             inf = om2.MFnDependencyNode(matrixPlug.elementByLogicalIndex(idx).source().node()).absoluteName()
-            infuences.append(inf)
+            influences.append(inf)
 
         ## Set all of the bindPreMatrix now.
         myDGMod.doIt()
@@ -76,21 +79,21 @@ def resetSkinCluster(skinClusters=[]):
         #################################################
         ## Now make sure the bindPose is fixed up or resetBindPose will fail.
         ## Don't know the om2 equiv of this! grrr
-        cmds.dagPose(infuences, reset=True, n=dagPoseName)
+        cmds.dagPose(influences, reset=True, n=dagPoseName)
 
         logger.info("Reset: {}".format(skClsMFnDep.name()))
 
 
+"""
 #####################################
-####### Reset all SkinClusters
+## Reset all SkinClusters
 import time
 start = time.time()
-resetSkinCluster(cmds.ls(type='skinCluster'))
+resetSkinClusters(cmds.ls(type='skinCluster'))
 logger.info("Reset took {} secs".format(start - time.time()))
 
-
 #####################################
-####### Reset skinCluster from selected Geo
+## Reset skinCluster from selected Geo
 start = time.time()
 geo = cmds.ls(sl=True)
 for eachGeo in geo:
@@ -102,9 +105,9 @@ for eachGeo in geo:
         if cmds.nodeType(eachNode) == 'skinCluster':
             skCls.append(eachNode)
     if len(skCls) == 1:
-        resetSkinCluster(skCls)
+        resetSkinClusters(skCls)
     else:
         logger.warning("Bad number of skinClusters for {}".format(eachGeo))
 logger.info("Reset took {} secs".format(start - time.time()))
-
+"""
 {% endhighlight %}
