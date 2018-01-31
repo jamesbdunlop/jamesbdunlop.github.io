@@ -4,7 +4,7 @@ title: "om2-ResetSkinClusters"
 isPost: true
 description: "Used to reset the bindPreMatrix for skinClusters after fixing joint positions on a bound mesh"
 usage: "Please see the commented code at the bottom for usage"
-lastUpdated: 01-02-2018
+lastUpdated: "01-02-2018"
 ---
 So I finally decided to get this reset working in om2 to see if I can get it going a little faster.
 <br>Hit a wee snag with the indices.. but nothing a good RTFM didn't fix.
