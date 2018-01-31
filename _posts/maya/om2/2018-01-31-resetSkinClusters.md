@@ -6,12 +6,8 @@ description: "Used to reset the bindPreMatrix for skinClusters after fixing join
 usage: "Please see the commented code at the bottom for usage"
 lastUpdated: "01-02-2018"
 ---
-So I finally decided to get this reset working in om2 to see if I can get it going a little faster.
-<br>Hit a wee snag with the indices.. but nothing a good RTFM didn't fix.
-<br>Seems to be working. Have tested this. But not run it over a full production rig yet so there might be some cases
-<br>where it might fail.
-<br>
-Have put 2 uses at the bottom.
+
+The 2 uses at the bottom.
 - Perform the reset on ALL skinClusters
 - Perform the reset on skinClusters found on selected geo.
 
