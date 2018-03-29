@@ -1,17 +1,23 @@
 ---
-title: Animal Logic
+title: Animal Logic TVC
 layout: workDone
 roles:
-    - Lead Modelling(HarryPotter Xfer)
+    - CG Lead
+    - Modelling
     - Rigging
-    - Lead Rigger(Peter Rabbit)
-    - TVC CG Lead
-    - Modelling(Film/TVC)
-    - Animation(Tvc)
+    - Animation
 isPost: false
 ---
 
 <table style="width:100%">
+<tr><th>
+<p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/vogue.png" alt="" border="0" /></p>
+</th><td>
+<h2>Magazine | Vogue</h2>
+<h3>Roles Performed</h3>
+<h4>Modelling | Model cleanup retopo, seat design+build, python tools</h4>
+</td></tr>
+
 <tr><th>
 <p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/Hyundai.png" alt="" border="0" /></p>
 </th><td>
