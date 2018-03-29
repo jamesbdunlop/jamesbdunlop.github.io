@@ -12,7 +12,7 @@ isPost: false
 <tr><th>
 <p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/peterrabbit.png" alt="" border="0" /></p>
 </th><td>
-<h2>Peter Rabbit: Allegiant</h2>
+<h2>Peter Rabbit</h2>
 <h3>Roles Performed</h3>
 <h4>Rigging Lead</h4>
 </td></tr>
