@@ -17,4 +17,13 @@ isPost: false
 <h4>Lead Rigging (only rigger at AL for this)</h4>
 </td></tr>
 
+<table style="width:100%">
+<tr><th>
+<p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/monk.png" alt="" border="0" /></p>
+</th><td>
+<h2>Monk Comes Down The Mountain</h2>
+<h3>Roles Performed</h3>
+<h4>Rigging - Characters / DigiDoubles / Props</h4>
+</td></tr>
+
 </table>
