@@ -7,7 +7,7 @@ roles:
     - Rigging TD(Boat rigging scripts)
 isPost: false
 ---
-<p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/sydneysailboat.png" alt="" border="0" /></p>
+<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/sydneysailboat.png" alt="" border="0" /></p>
 <p>During my time on Bubblebath Bay I was involved in all kinds of roles, from operating / designing processes / process implementation / training / documentation etc etc.Clicking on read more will provide a further breakdown of roles performed during my time at Purple Pictures / Essential  Media.</p>
 <p><span style="font-size: x-large;"><b>Pipeline Design</b></span></p>
 <ul>
