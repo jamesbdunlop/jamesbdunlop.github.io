@@ -42,7 +42,7 @@ isPost: false
 </td></tr>
 
 <tr><th>
-<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/legoningao.png" alt="" border="0" /></p>
+<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/legoninjago.png" alt="" border="0" /></p>
 </th><td>
 <h2>Lego Ninjago</h2>
 <h3>Roles Performed</h3>
