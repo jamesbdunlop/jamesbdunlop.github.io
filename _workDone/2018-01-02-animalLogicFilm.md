@@ -22,7 +22,7 @@ isPost: false
 </th><td>
 <h2>The Divergent Series: Allegiant</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging (only rigger at AL for this) + Layout python tools | Modelling tools for City Build.</h4>
+<h4>"Lead" Rigging (1 rigger for this at AL) + Layout python tools | Modelling tools for City Build.</h4>
 </td></tr>
 
 <tr><th>
@@ -30,7 +30,7 @@ isPost: false
 </th><td>
 <h2>The Great Wall</h2>
 <h3>Roles Performed</h3>
-<h4>Rigging - Balloon rigs, ILM char rig xfers, RopeFX for wall scaling shots.</h4>
+<h4>"Lead" Rigging (1 rigger for this a AL) - Balloon rigs, ILM char rig xfers, RopeFX for wall scaling shots.</h4>
 </td></tr>
 
 <tr><th>
