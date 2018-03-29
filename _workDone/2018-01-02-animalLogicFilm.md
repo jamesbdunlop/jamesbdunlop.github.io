@@ -10,7 +10,7 @@ isPost: false
 
 <table style="width:100%">
 <tr><th>
-<p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/allegiant.png" alt="" border="0" /></p>
+<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/allegiant.png" alt="" border="0" /></p>
 </th><td>
 <h2>The Divergent Series: Allegiant</h2>
 <h3>Roles Performed</h3>
@@ -19,7 +19,7 @@ isPost: false
 
 <table style="width:100%">
 <tr><th>
-<p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/monk.png" alt="" border="0" /></p>
+<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/monk.png" alt="" border="0" /></p>
 </th><td>
 <h2>Monk Comes Down The Mountain</h2>
 <h3>Roles Performed</h3>
