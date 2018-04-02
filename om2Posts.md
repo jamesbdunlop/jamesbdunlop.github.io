@@ -1,21 +1,18 @@
 ---
 layout: default
-title: "JamesDunlop-Homepage"
-info: info.md
+title: "C++ Posts"
 ---
 <div class="body">
-  {% for post in site.about %}
-    {{ post.content }}
-  {% endfor %}
   <ul class="post-list">
     {% for post in site.posts %}
-        {% if post.isPost == true %}
+        {% if post.isPost == true and post.category == "om2" %}
           <li>
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h2>
-              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h2>
+            <h4>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              {{ post.description }}
+            </h4>
           </li>
         {% endif %}
     {% endfor %}

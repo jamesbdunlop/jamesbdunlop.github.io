@@ -5,6 +5,7 @@ isPost: true
 description: "Used to reset the bindPreMatrix for skinClusters after fixing joint positions on a bound mesh"
 usage: "Please see the commented code at the bottom for usage"
 lastUpdated: "02-02-2018"
+category: om2
 ---
 Can be found here: https://jamesbdunlop.github.io/jbd_om2/
 The 2 uses at the bottom.
