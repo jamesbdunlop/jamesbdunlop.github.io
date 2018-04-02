@@ -7,6 +7,8 @@ info: info.md
   {% for post in site.about %}
     {{ post.content }}
   {% endfor %}
+
+  <center><h2>Recent Posts</h2></center>
   <ul class="post-list">
     {% for post in site.posts %}
         {% if post.isPost == true %}
