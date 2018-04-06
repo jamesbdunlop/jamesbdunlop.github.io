@@ -5,6 +5,8 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     backports (3.11.1)
     colorator (1.1.0)
+    faraday (0.14.0)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
     forwardable-extended (2.6.0)
     jekyll (3.6.2)
@@ -25,6 +27,8 @@ GEM
       sinatra-contrib (~> 1.4)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
+    jekyll-gist (1.5.0)
+      octokit (~> 4.2)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.4.0)
@@ -55,6 +59,9 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
+    octokit (4.8.0)
+      sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.2)
@@ -74,6 +81,9 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sawyer (0.8.1)
+      addressable (>= 2.3.5, < 2.6)
+      faraday (~> 0.8, < 1.0)
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -94,6 +104,7 @@ DEPENDENCIES
   jekyll (~> 3.6.2)
   jekyll-admin
   jekyll-feed (~> 0.6)
+  jekyll-gist
   jekyll-theme-dinky
   jekyll-theme-hacker
   jekyll-theme-midnight
