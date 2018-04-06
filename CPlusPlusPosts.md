@@ -9,12 +9,13 @@ title: "C++ Posts"
           <li>
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h2>
+            <h4>
               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
               {{ post.description }}
-            </h2>
+            </h4>
           </li>
         {% endif %}
     {% endfor %}
   </ul>
 </div>
+

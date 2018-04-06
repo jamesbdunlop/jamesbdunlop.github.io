@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "C++ Posts"
+title: "OM2 Posts"
 ---
 <div class="body">
   <ul class="post-list">
