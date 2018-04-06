@@ -7,7 +7,7 @@ usage: "Please see the commented code at the bottom for usage"
 lastUpdated: "02-02-2018"
 category: om2
 ---
-Can be found here: https://jamesbdunlop.github.io/jbd_om2/
+
 The 2 uses at the bottom.
 - Perform the reset on ALL skinClusters
 - Perform the reset on skinClusters found on selected geo.
