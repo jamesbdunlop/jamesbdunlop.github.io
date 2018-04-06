@@ -11,6 +11,7 @@ title: "C++ Posts"
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             <h2>
               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              {{ post.description }}
             </h2>
           </li>
         {% endif %}
