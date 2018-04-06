@@ -13,5 +13,5 @@ The 2 uses at the bottom.
 - Perform the reset on skinClusters found on selected geo.
 
 {% highlight python %}
-{% gist 5d9f0eace48dc7654cbecb8b608bc57a %}
+{% gist 5d9f0eace48dc7654cbecb8b608bc57a om2_resetSkinCluster.md%}
 {% endhighlight %}
