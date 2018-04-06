@@ -277,8 +277,9 @@ section {
   margin: 20px 0    ;
   margin-top: 0px;
 
-  tr {
+  .gist-data, tr, td, th {
     background-color: #39434C !Important;
+    color: white !Important;
     }
 
   #title {
