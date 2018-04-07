@@ -45,7 +45,9 @@ comments in the boiler plate found in the API Doc for furture refrence for what 
 {% gist b661cbb0902b479e1d9bc859c2ee55ab %}
 
 <br>
-Why? Well what I'm aiming for is to have a base file I can copy paste from that gives
+Why?
+<br>
+Well what I'm aiming for is to have a base file I can copy paste from that gives
 me the entire layout for a python plugin to leverage for future plugins.
 <br>
 You'll notice the above gist is already a lot of code, but it's the shell of what we need
@@ -113,6 +115,6 @@ cmds.resetSkinClusters()
 <br>
 And here it is in all it's glory converted to a maya command that has a working undo!
 So I don't have to copy paste a huge chunk of data into the script editor anymore.
-I can load an unload it like a c++ plugin using  cmds.resetSkinClusters()
+I can load an unload it like a c++ plugin and call it using  cmds.resetSkinClusters()
 
 {% gist b1b5ab6449aede037d0d532e7d106df1 %}
