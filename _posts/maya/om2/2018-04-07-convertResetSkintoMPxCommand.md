@@ -4,9 +4,10 @@ title: "om2-Convert-ResetSkinClusters to a python MPxCommand"
 isPost: true
 description: "How I converted the script into a MPxCommand"
 usage: "<br>Step1: Save gist to valid plug-ins folder as resetSkinClusters.py  <br>Step2: In the script editor load the cmd cmds.loadPlugin('{}.py'.format(pluginName)) <br>Step3: Select some geo and run cmds.resetSkinClusters()"
-lastUpdated: "04-07-2018"
+lastUpdated: "04-08-2018"
 category: om2
 ---
+And updated to be entirely om2 as gg AD the docs are ticky to nav and adding syntax() into the mix highlighted this as a major issue.
 Hopefully this might provide some insights into converting some usfeul blog scripts out there to your own cmds.myNewScript() commands.
 <br>
 <h3>Step 1: Gathering Info</h3>
@@ -14,7 +15,6 @@ Doing a quick google. Here's the info I found to use:
 <li><a href="https://www.youtube.com/watch?v=BZyXe3MhEyI">Maya Python Plugin Overview P1</a>
 <li><a href="https://www.youtube.com/watch?v=v1d8fCtIROI">Maya Python Plugin Overview P2</a>
 <li><a href="http://docs.autodesk.com/MAYAUL/2014/ENU/Maya-API-Documentation/index.html?url=files/GUID-B968733D-B288-4DAF-9685-4676DC3E4E94-1.htm,topicNumber=d30e34174">Your First Maya Python Plug-in</a>
-<li><a href="https://help.autodesk.com/view/MAYAUL/2018/ENU/?guid=__py_ref_class_open_maya_1_1_m_px_command_html">MPxCommand Class info</a>
 
 <br>
 I'm choosing the more direct info as I want to <b>understand</b> this setup,
@@ -101,7 +101,7 @@ with that in the script editor:
 import maya.cmds as cmds
 pluginName = "resetSkinClusters"
 testFilePath = "pathToTestFile.ma"
-## Force a new scene to cleanly unload the plugin
+## Force a new scene to cleanly unload the plugin (you could use cmds.flushUndo() here too)
 cmds.file(new=True, f=True)
 
 cmds.unloadPlugin("{}.py".format(pluginName))
