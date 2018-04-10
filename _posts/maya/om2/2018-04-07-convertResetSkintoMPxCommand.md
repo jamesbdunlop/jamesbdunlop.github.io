@@ -60,6 +60,6 @@ me the entire layout for a python plugin to leverage for future plugins.
 You'll notice the above gist is already a lot of code, but it's the shell of what we need
 for Maya to work out what is going on. It's a chunk of data to remember, so I'm stashing
 it in a gist. On to part2 of the post.
-<a href=https://jamesbdunlop.github.io/om2/2018/04/07/convertResetSkintoMPxCommand02.html
+<a href=https://jamesbdunlop.github.io/om2/2018/04/07/convertResetSkintoMPxCommand02.html>Part02</a>
 
 
