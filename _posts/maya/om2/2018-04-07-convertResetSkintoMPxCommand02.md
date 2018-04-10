@@ -3,10 +3,10 @@ layout: codePost
 title: "om2-Convert-ResetSkinClusters to a python MPxCommand Part 2"
 isPost: true
 description: "How I converted the script into a MPxCommand - Part2"
-usage: "<br>Step1: Save gist to valid plug-ins folder as resetSkinClusters.py  \
+usage: "<br>Step1: Save gist to valid plug-ins folder as jbdResetSkinClusters.py  \
 <br>Step2: In the script editor load the cmd cmds.loadPlugin('pathTo/plugin.py') \
 <br>Step3: Select some geo and run cmds.resetSkinClusters()"
-lastUpdated: "04-08-2018"
+lastUpdated: "04-10-2018"
 category: om2
 ---
 And updated to be entirely om2 as gg AD the docs are ticky to nav and adding syntax() into the mix highlighted this as a major issue.

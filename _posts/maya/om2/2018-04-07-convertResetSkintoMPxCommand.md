@@ -4,7 +4,7 @@ title: "om2-Convert-ResetSkinClusters to a python MPxCommand Part 1"
 isPost: true
 description: "How I converted the script into a MPxCommand - Part1"
 usage: ""
-lastUpdated: "04-08-2018"
+lastUpdated: "04-10-2018"
 category: om2
 ---
 I split this into 2 posts recently as getting the base boilerplate gist has grown trying to get args to work.
