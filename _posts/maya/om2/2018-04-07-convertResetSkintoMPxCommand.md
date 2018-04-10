@@ -1,20 +1,27 @@
 ---
 layout: codePost
-title: "om2-Convert-ResetSkinClusters to a python MPxCommand"
+title: "om2-Convert-ResetSkinClusters to a python MPxCommand Part 1"
 isPost: true
-description: "How I converted the script into a MPxCommand"
-usage: "<br>Step1: Save gist to valid plug-ins folder as resetSkinClusters.py  <br>Step2: In the script editor load the cmd cmds.loadPlugin('{}.py'.format(pluginName)) <br>Step3: Select some geo and run cmds.resetSkinClusters()"
+description: "How I converted the script into a MPxCommand - Part1"
+usage: ""
 lastUpdated: "04-08-2018"
 category: om2
 ---
-And updated to be entirely om2 as gg AD the docs are ticky to nav and adding syntax() into the mix highlighted this as a major issue.
-Hopefully this might provide some insights into converting some usfeul blog scripts out there to your own cmds.myNewScript() commands.
+I split this into 2 posts recently as getting the base boilerplate gist has grown trying to get args to work.
+<br>
+Also updated to be entirely om2 as the links below head more to om1 formatting.
+<br>
+Hopefully this might provide some insights into converting some useful blog scripts out there to your own cmds.myNewScript() commands.
+<br>
 <br>
 <h3>Step 1: Gathering Info</h3>
 Doing a quick google. Here's the info I found to use:
 <li><a href="https://www.youtube.com/watch?v=BZyXe3MhEyI">Maya Python Plugin Overview P1</a>
 <li><a href="https://www.youtube.com/watch?v=v1d8fCtIROI">Maya Python Plugin Overview P2</a>
 <li><a href="http://docs.autodesk.com/MAYAUL/2014/ENU/Maya-API-Documentation/index.html?url=files/GUID-B968733D-B288-4DAF-9685-4676DC3E4E94-1.htm,topicNumber=d30e34174">Your First Maya Python Plug-in</a>
+<li><a href="http://help.autodesk.com/view/MAYAUL/2018/ENU/?guid=__py_ref_class_open_maya_1_1_m_syntax_html">MSyntax</a>
+<li><a href="http://help.autodesk.com/view/MAYAUL/2018/ENU/?guid=__py_ref_class_open_maya_1_1_m_arg_parser_html">MArgParser</a>
+<li><a href="http://help.autodesk.com/view/MAYAUL/2018/ENU/?guid=__py_ref_class_open_maya_1_1_m_px_command_html">MPxCommand</a>
 
 <br>
 I'm choosing the more direct info as I want to <b>understand</b> this setup,
@@ -30,8 +37,8 @@ expects it.
 Boilerplate code is the same code we can expect to use over and
 over and over in every plugin we'll be writing ( with modifications to it for
 each plugin!)
-<br>
-<br>
+
+<br><br>
 Maya Python Plugin Overview P1 has a good base to start from. How ever having
 listened to the video while fleshing this post I'm also going to need;
 <li>isUndoable()    -- Returns a boolean
@@ -52,69 +59,7 @@ me the entire layout for a python plugin to leverage for future plugins.
 <br>
 You'll notice the above gist is already a lot of code, but it's the shell of what we need
 for Maya to work out what is going on. It's a chunk of data to remember, so I'm stashing
-it in a gist.
+it in a gist. On to part2 of the post.
+<a href=https://jamesbdunlop.github.io/om2/2018/04/07/convertResetSkintoMPxCommand02.html
 
-<br><br>
-<h2>Making the resetSkin plugin:</h2>
-Looking at the previous post <a href="https://jamesbdunlop.github.io/om2/2018/01/31/resetSkinClusters.html">here</a>
-I only have the one function resetSkinClusters(skinClusters=[])
-<br>
-So this should be fairly straight forward to convert. That resetSkinClusters() function will
-essentially become the doIt().
-<br>
-<br>
-Note: I needed to also make a decision, if I want to support a geoList=[]
-argument or just handle a valid selection in the plugin.
-For now I'm going to ignore the argument and assume users will want to
-just select skinned geo and run the tool.
 
-<br>
-<br>
-<b>I'm not going to bother trying to break down every step I did as it'll be a
-huge thread and lose the point, which is a more general scope of what is involved.</b>
-
-<br>
-<br>
-
-<h3>List of issue resolved along the way:</h3>
-<li>I had to create the plug-ins folder in the base maya docs folder.
-<br>
-<i>"C:\Users\<username>\Documents\maya\<version>\plug-ins, or in one of the
-directories defined by your MAYA_PLUG_IN_PATH environment variable."</i>
-<br>
-
-<li>The darn fileName became the plugin name when loading and unloading.
-So be mindful of that or you'll get
-<br>
-"# RuntimeError: Plug-in, "resetSkinClusters.py", was not found on MAYA_PLUG_IN_PATH. # "
-
-<li>Added a resolve method to the class to help find the selections and return these as expected.
-
-<li>I forgot I just did all skinClusters so I needed to pull in my methods
-from my om2 library _iterForSkinCluster and _findSkinCluster
-
-<li>Since I used pyCharm to dev the script I needed to load and unload the
-plugin in maya in maya to reflect changes made. So I wrote a little script to help
-with that in the script editor:
-
-{% highlight python %}
-import maya.cmds as cmds
-pluginName = "resetSkinClusters"
-testFilePath = "pathToTestFile.ma"
-## Force a new scene to cleanly unload the plugin (you could use cmds.flushUndo() here too)
-cmds.file(new=True, f=True)
-
-cmds.unloadPlugin("{}.py".format(pluginName))
-cmds.loadPlugin("{}.py".format(pluginName))
-cmds.file(testFilePath, open=True)
-
-## Then call the plugin for testing.
-cmds.resetSkinClusters()
-{% endhighlight %}
-
-<br>
-And here it is in all it's glory converted to a maya command that has a working undo!
-So I don't have to copy paste a huge chunk of data into the script editor anymore.
-I can load an unload it like a c++ plugin and call it using  cmds.resetSkinClusters()
-
-{% gist b1b5ab6449aede037d0d532e7d106df1 %}
