@@ -51,18 +51,16 @@ plugin in maya in maya to reflect changes made. So I wrote a little script to he
 with that in the script editor:
 
 {% highlight python %}
+#import os
 import maya.cmds as cmds
-pluginName = "resetSkinClusters"
-testFilePath = "pathToTestFile.ma"
-## Force a new scene to cleanly unload the plugin (you could use cmds.flushUndo() here too)
+#for path in os.getenv("MAYA_PLUGIN_PATH").split(";"):
+#    print path
 cmds.file(new=True, f=True)
+names = ["plugName"]
+for pluginName in names:
+    cmds.unloadPlugin("{}.py".format(pluginName))
+    cmds.loadPlugin("C:/fullpathto/{}.py".format(pluginName))
 
-cmds.unloadPlugin("{}.py".format(pluginName))
-cmds.loadPlugin("{}.py".format(pluginName))
-cmds.file(testFilePath, open=True)
-
-## Then call the plugin for testing.
-cmds.resetSkinClusters()
 {% endhighlight %}
 
 <br>
