@@ -2,9 +2,9 @@
 title: LemonSky / Essential Media and Entertainment
 layout: workDone
 roles:
-    - Series Technical Directory(Pipeline Development)
-    - Modelling(Sydney SailBoat)
-    - Rigging TD(Boat rigging scripts)
+    - Series Technical Director (Shotgun Pipeline Development for all depts)
+    - Modelling (Sydney SailBoat)
+    - Rigging TD (Boat rigging scripts / FX Water supporting scripting)
 isPost: false
 ---
 <p><center><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/sydneysailboat.png" alt="" border="0" /></center></p>
