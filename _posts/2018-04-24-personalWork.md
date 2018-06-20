@@ -3,12 +3,13 @@ title: "Personal Mucking Around"
 isPost: true
 ---
 <center>
-Just a bunch of random work at home :)
+<h2>Just a bunch of random work at home :)</h2>
 
 3D Print for Peter Rabbit Rigging Team
-<img src= "/assets/personal/prRig_solo.png" alt="PRRigPrint"><br>
+<br>
+<img src= "/assets/personal/prRig_solo.png" alt="PRRigPrint">
 
-Dragon - WIP<br>
+<br>Dragon - WIP<br>
 <img src= "/assets/personal/DragonThickerNeck.gif" width="702" height="272"  alt="Dragon02"><br>
 <img src= "/assets/personal/dragon_wip.png" alt="Dragon01"><br>
 
@@ -31,7 +32,7 @@ Dragon - WIP<br>
 <img src= "/assets/personal/skull_brain.png" alt="skull"><br><br>
 <img src= "/assets/personal/BPR_Render.png" alt="random"><br>
 <img src= "/assets/personal/liz_07.png" alt="lizard"><br>
-<img src= "/assets/personal/lizardTT.gif" width="640" height="480"  alt="lizard"><br>
+<img src= "/assets/personal/lizardTT.gif" width="600" height="295"  alt="lizard"><br>
 <br>
 I lost the HD with this finished model on it :( This is the only shot that shows a WIP of the body...
 had the whole thing done and all 2 days lost the HD !
