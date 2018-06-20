@@ -4,8 +4,14 @@ isPost: true
 ---
 <center>
 Just a bunch of random work at home :)
+
+3D Print for Peter Rabbit Rigging Team
+<img src= "/assets/personal/prRig_solo.png" alt="PRRigPrint"><br>
+
 Dragon - WIP<br>
-<img src= "/assets/personal/dragon_wip.png" alt="cronkleAllViews"><br>
+<img src= "/assets/personal/DragonThickerNeck.gif" alt="Dragon02"><br>
+<img src= "/assets/personal/dragon_wip.png" alt="Dragon01"><br>
+
 <img src= "/assets/personal/cronkleAllViews.png" alt="cronkleAllViews"><br>
 <img src= "/assets/personal/gun01_onCronkle01BPR.PNG" alt="gun01_onCronkle01BPR"><br>
 <img src= "/assets/personal/gunTestShading.PNG" alt="gunTestShading"><br><br>
