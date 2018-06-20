@@ -9,7 +9,7 @@ Just a bunch of random work at home :)
 <img src= "/assets/personal/prRig_solo.png" alt="PRRigPrint"><br>
 
 Dragon - WIP<br>
-<img src= "/assets/personal/DragonThickerNeck.gif" alt="Dragon02"><br>
+<img src= "/assets/personal/DragonThickerNeck.gif" width="702" height="272"  alt="Dragon02"><br>
 <img src= "/assets/personal/dragon_wip.png" alt="Dragon01"><br>
 
 <img src= "/assets/personal/cronkleAllViews.png" alt="cronkleAllViews"><br>
