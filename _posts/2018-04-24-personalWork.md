@@ -10,6 +10,7 @@ isPost: true
 <img src= "/assets/personal/prRig_solo.png" width="600" height="295" alt="PRRigPrint">
 
 <br>Dragon - WIP<br>
+<img src= "/assets/personal/DragonFin.gif" width="702" height="272"  alt="Dragon02"><br>
 <img src= "/assets/personal/DragonThickerNeck.gif" width="702" height="272"  alt="Dragon02"><br>
 <img src= "/assets/personal/dragon_wip.png" alt="Dragon01"><br>
 
