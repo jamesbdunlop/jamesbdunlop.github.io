@@ -7,7 +7,6 @@ isPost: true
 
 <img src= "/assets/personal/doritoCharNew.gif" width="702" height="272" alt="DoritosCharUpdated">
 
-
 <br>3D Print for Peter Rabbit Rigging Team
 <br>
 <img src= "/assets/personal/prRig_solo.png" width="600" height="295" alt="PRRigPrint">
