@@ -5,9 +5,12 @@ isPost: true
 <center>
 <h2>Just a bunch of random work at home :)</h2>
 
-<img src= "/assets/personal/doritoCharNew.gif" width="702" height="272" alt="DoritosCharUpdated">
+Rotated the bottom legs around.. prefer it this way was bugging me..<br>
+<img src= "/assets/personal/gremlinTurntableNewLegs.gif" width="512" height="288" alt="gremlin"><br>
 
-<br><img src= "/assets/personal/rockFace.png" alt="RockFace">
+<img src= "/assets/personal/doritoCharNew.gif" width="702" height="272" alt="DoritosCharUpdated"><br>
+
+<br><img src= "/assets/personal/rockFace.png" alt="RockFace"><br>
 
 <br>3D Print for Peter Rabbit Rigging Team
 <br>
