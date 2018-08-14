@@ -4,6 +4,8 @@ isPost: true
 ---
 <center>
 <h2>Just a bunch of random work at home :)</h2>
+Testing new pushTransform node. <br>
+<img src= "/assets/personal/pushTransformTest.gif" width="400" height="200" alt="gremlin"><br>
 
 Rotated the bottom legs around.. prefer it this way was bugging me..<br>
 <img src= "/assets/personal/gremlinTurntableNewLegs.gif" width="512" height="288" alt="gremlin"><br>
