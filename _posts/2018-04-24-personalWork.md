@@ -4,6 +4,8 @@ isPost: true
 ---
 <center>
 <h2>Just a bunch of random work at home :)</h2>
+<img src= "/assets/personal/zombieGirl.png" width="800" height="388" alt="zombieGirl"><br>
+
 Testing new pushTransform node. <br>
 <img src= "/assets/personal/pushTransformTest.gif" width="400" height="200" alt="gremlin"><br>
 
