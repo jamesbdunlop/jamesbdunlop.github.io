@@ -4,6 +4,7 @@ isPost: true
 ---
 <center>
 <h2>Just a bunch of random work at home :)</h2>
+<img src= "/assets/personal/DMse2.gif" width="1000" height="500" alt="zombieGirl"><br>
 <img src= "/assets/personal/GobbyExpression.gif" width="1000" height="500" alt="zombieGirl"><br>
 <img src= "/assets/personal/zombieGirl.png" width="800" height="388" alt="zombieGirl"><br>
 
