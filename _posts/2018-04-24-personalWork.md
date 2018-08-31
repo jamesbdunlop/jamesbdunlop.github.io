@@ -4,6 +4,9 @@ isPost: true
 ---
 <center>
 <h2>Just a bunch of random work at home :)</h2>
+<img src= "/assets/personal/squiddy.png" width="1554" height="744" alt="Squiddy"><br>
+<img src= "/assets/personal/personalplatypus.gif" width="1000" height="500" alt="Platypus"><br>
+<img src= "/assets/personal/demonhead_03.png" width="1256" height="634" alt="DemonFun"><br>
 <img src= "/assets/personal/DMs4.gif" width="1000" height="500" alt="DangerMouse"><br>
 <img src= "/assets/personal/GobbyExpression.gif" width="1000" height="500" alt="zombieGirl"><br>
 <img src= "/assets/personal/zombieGirl.png" width="800" height="388" alt="zombieGirl"><br>
