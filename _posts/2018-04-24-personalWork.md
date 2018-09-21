@@ -6,7 +6,7 @@ isPost: true
 <h2>Just a bunch of random work at home :)</h2>
 <img src= "/assets/personal/octopus_allviews.png" width="494" height="125" alt="OctAllviews"><br>
 <img src= "/assets/personal/octopus01.gif" width="500" height="250" alt="OctopusTurnTable"><br>
-<img src= "/assets/personal/personalplatypus.gif" width="500" height="250" alt="Platypus"><br>
+<img src= "/assets/personal/platypus_allviews.png" width="494" height="125" alt="OctAllviews"><br>
 <img src= "/assets/personal/demonhead_03.png" width="500" height="250" alt="DemonFun"><br>
 <img src= "/assets/personal/DMs4.gif" width="500" height="250" alt="DangerMouse"><br>
 <img src= "/assets/personal/GobbyExpression.gif" width="500" height="250" alt="zombieGirl"><br>
