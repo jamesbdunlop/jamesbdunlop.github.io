@@ -12,7 +12,7 @@ category: om2
 So the args. Omg.
 <br>
 For some reason any of the standard approaches documented out there cause a kFailure trying to set args.
-As it stands I can't get kStringObjects or kSelectionList working / parseed for the uvmaps=("map1", "map2")
+As it stands I can't get kStringObjects or kSelectionList working / parsed for the uvmaps=("map1", "map2")
 argument. So I ended up putting those through as 2 sep string arguments and processing those internally.
 <br>
 Anyway here it is as a stand alone plugin. Oh and it's not production tested (yet) :)
