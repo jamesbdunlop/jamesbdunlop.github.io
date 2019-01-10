@@ -4,6 +4,8 @@ isPost: true
 ---
 <center>
 <h2>Just a bunch of random work at home :)</h2>
+<img src= "/assets/personal/forPhilsm.png" width="800" height="393" alt="jawtest"><br>
+<img src= "/assets/personal/forPhil3Dsm.png" width="800" height="446" alt="jawtest"><br>
 <img src= "/assets/personal/noseTest.gif" width="640" height="512" alt="jawtest"><br>
 <img src= "/assets/personal/octopus_allviews.png" width="494" height="125" alt="OctAllviews"><br>
 <img src= "/assets/personal/octopus01.gif" width="500" height="250" alt="OctopusTurnTable"><br>
