@@ -10,7 +10,7 @@ Image for my Brother in Law<br>
 <img src= "/assets/personal/forPhilsm.png" width="800" height="341" alt="eddie"><br>
 <img src= "/assets/personal/forPhil3Dsm.png" width="800" height="446" alt="eddieZbrush"><br>
 
-Testing nose interaction with the lip setup / custom C++ nodes for the face
+Testing nose interaction with the lip setup / custom C++ nodes for the face<br>
 <img src= "/assets/personal/noseTest.gif" width="640" height="512" alt="jawtest"><br>
 
 <img src= "/assets/personal/octopus_allviews.png" width="494" height="125" alt="OctAllviews"><br>
