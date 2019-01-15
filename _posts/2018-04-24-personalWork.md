@@ -4,9 +4,15 @@ isPost: true
 ---
 <center>
 <h2>Just a bunch of random work at home :)</h2>
-<img src= "/assets/personal/forPhilsm.png" width="800" height="341" alt="jawtest"><br>
-<img src= "/assets/personal/forPhil3Dsm.png" width="800" height="446" alt="jawtest"><br>
+<img src= "/assets/personal/phant03.gif" width="998" height="552" alt="phant"><br>
+
+Image for my Brother in Law<br>
+<img src= "/assets/personal/forPhilsm.png" width="800" height="341" alt="eddie"><br>
+<img src= "/assets/personal/forPhil3Dsm.png" width="800" height="446" alt="eddieZbrush"><br>
+
+Testing nose interaction with the lip setup / custom C++ nodes for the face
 <img src= "/assets/personal/noseTest.gif" width="640" height="512" alt="jawtest"><br>
+
 <img src= "/assets/personal/octopus_allviews.png" width="494" height="125" alt="OctAllviews"><br>
 <img src= "/assets/personal/octopus01.gif" width="500" height="250" alt="OctopusTurnTable"><br>
 <img src= "/assets/personal/platypus_allviews.PNG" width="494" height="125" alt="PlatypusAllviews"><br>
