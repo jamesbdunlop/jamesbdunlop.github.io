@@ -5,6 +5,24 @@ isPost: true
 <center>
 <h2>Just a bunch of random work at home :) SketchFab meshes have been decimated!</h2>
 <div class="sketchfab-embed-wrapper"><iframe width="960" height="480"
+src="https://sketchfab.com/models/f5067767784541eb94c7cd75f34274fc/embed?
+autospin=0.4"
+frameborder="0"
+allow="autoplay;
+fullscreen; vr"
+mozallowfullscreen="true"
+webkitallowfullscreen="true"></iframe>
+
+<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/models/f5067767784541eb94c7cd75f34274fc?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Angler Fish</a>
+    by <a href="https://sketchfab.com/jamesbdunlop?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jamesbdunlop</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p>
+</div>
+
+
+<br><br><br><br>
+<div class="sketchfab-embed-wrapper"><iframe width="960" height="480"
 src="https://sketchfab.com/models/b8a33589b24d4a36af31e49868a11dfc/embed?
 autospin=0.4"
 frameborder="0"
@@ -158,13 +176,42 @@ mozallowfullscreen="true"
 <br>
 <img src= "/assets/personal/prRig_solo.png" width="600" height="295" alt="PRRigPrint">
 
-<br>Dragon - WIP<br>
+<br>Dragon01<br>
+<div class="sketchfab-embed-wrapper"><iframe width="960" height="480" src="https://sketchfab.com/models/fe757780e8724db4a73da1a72aa3567d/embed?
+autospin=0.4"
+frameborder="0"
+allow="autoplay;
+fullscreen; vr"
+mozallowfullscreen="true"
+ webkitallowfullscreen="true"></iframe>
+<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/models/fe757780e8724db4a73da1a72aa3567d?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dragon</a>
+    by <a href="https://sketchfab.com/jamesbdunlop?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jamesbdunlop</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p>
+</div>
 <img src= "/assets/personal/DragonFin.gif" width="702" height="272"  alt="Dragon02"><br>
-<img src= "/assets/personal/DragonThickerNeck.gif" width="702" height="272"  alt="Dragon02"><br>
 
+<br><br><br><br>
+<br>Cronkl01<br>
+<div class="sketchfab-embed-wrapper"><iframe width="960" height="480" src="https://sketchfab.com/models/396b70ddee34484f97ec0b0926934519/embed?
+autospin=0.4"
+frameborder="0"
+allow="autoplay;
+fullscreen; vr"
+mozallowfullscreen="true"
+ webkitallowfullscreen="true"></iframe>
+<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/models/396b70ddee34484f97ec0b0926934519?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Cronkle01</a>
+    by <a href="https://sketchfab.com/jamesbdunlop?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jamesbdunlop</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p>
+</div>
 <img src= "/assets/personal/cronkleAllViews.png" alt="cronkleAllViews"><br>
 <img src= "/assets/personal/gun01_onCronkle01BPR.PNG" alt="gun01_onCronkle01BPR"><br>
 <img src= "/assets/personal/gunTestShading.PNG" alt="gunTestShading"><br><br>
+
+<br><br><br><br>
 <img src= "/assets/personal/Folklore.png" alt="gunTestShading"><br><br>
 <img src= "/assets/personal/zbrushModel_wide.png" alt="gremlin"><br>
 <img src= "/assets/personal/zbrushModel_cu.png" alt="gremlin"><br>
