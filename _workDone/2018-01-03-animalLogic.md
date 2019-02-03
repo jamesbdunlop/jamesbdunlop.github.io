@@ -4,7 +4,7 @@ layout: workDone
 roles:
     - CG Lead
     - Modelling
-    - Rigging
+    - Rigging (Sole rigger)
     - Animation
 isPost: false
 ---
@@ -31,7 +31,7 @@ isPost: false
 </th><td>
 <h2>TVC | SOH Graphics Intro</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging All | Animation 7 shotsmain opener</h4>
+<h4>Rigging All | Animation 7 shotsmain opener</h4>
 <p><a href="https://www.youtube.com/watch?v=3oWKMyxc73M">https://www.youtube.com/watch?v=3oWKMyxc73M</a></p>
 </td></tr>
 
@@ -40,7 +40,7 @@ isPost: false
 </th><td>
 <h2>TVC | TACs</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging Bike and Man</h4>
+<h4>Rigging Bike and Man</h4>
 <p><a href="https://www.youtube.com/watch?v=HT666XwJR2s">https://www.youtube.com/watch?v=HT666XwJR2s</a></p>
 </td></tr>
 
@@ -70,7 +70,7 @@ isPost: false
 </th><td>
 <h2>TVC | Hilltop hoods</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging main Chars + robot</h4>
+<h4>Rigging main Chars + robot</h4>
 <h4>Animation - Modelling Robot scene</h4>
 <h4>TD Stuff for zeotrope approach</h4>
 <p>https://www.youtube.com/watch?v=xNf5miQ6tWY</p>
@@ -82,7 +82,7 @@ isPost: false
 </th><td>
 <h2>TVC | Rams - Sauna</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging<br />vimeo: <a href="https://vimeo.com/37833503">https://vimeo.com/37833503</a></h4>
+<h4>Rigging<br />vimeo: <a href="https://vimeo.com/37833503">https://vimeo.com/37833503</a></h4>
 </td></tr>
 
 <tr><th>
@@ -90,7 +90,7 @@ isPost: false
 </th><td>
 <h2>TVC | SBS Billions</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging</h4>
+<h4>Rigging</h4>
 <h4>Design / for Ice transition</h4>
 <p>vimeo: <a href="https://vimeo.com/37797729">https://vimeo.com/37797729</a></p>
 </td></tr>
@@ -100,7 +100,7 @@ isPost: false
 </th><td>
 <h2>TVC | Elantra</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging</h4>
+<h4>Rigging</h4>
 <h4>Some env Modelling - roof and roof dome / edges cleanup</h4>
 <p>https://www.youtube.com/watch?v=WWBW4JhO_VM</p>
 </td></tr>
@@ -110,7 +110,7 @@ isPost: false
 </th><td>
 <h2>TVC | DHA</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging / Animation</h4>
+<h4>Rigging / Animation</h4>
 <h4>Some env Modelling - roof and roof dome / edges cleanup</h4>
 <p>The Loop: <a href="http://www.theloop.com.au/animallogic/portfolio/how-to-become-a-swapper/20473">http://www.theloop.com.au/animallogic/portfolio/how-to-become-a-swapper/20473</a></p>
 </td></tr>
@@ -128,7 +128,7 @@ isPost: false
 </th><td>
 <h2>TVC | CWBank School Banking</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging Axolotl</h4>
+<h4>Rigging Axolotl</h4>
 </td></tr>
 
 <tr><th>
@@ -136,7 +136,7 @@ isPost: false
 </th><td>
 <h2>TVC | Kia Optima</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Rigging</h4>
+<h4>Rigging</h4>
 <h4>Rigs for missile, chopper, boat, alien body</h4>
 <p>vimeo: <a href="https://vimeo.com/37790358">https://vimeo.com/37790358</a></p>
 </td></tr>
@@ -146,7 +146,7 @@ isPost: false
 </th><td>
 <h2>TVC | ING</h2>
 <h2>Roles Performed</h2>
-<h4>Lead Rigging</h4>
+<h4>Rigging</h4>
 <h4>Animation of the `Niicceee' shot</h4>
 </td></tr>
 
