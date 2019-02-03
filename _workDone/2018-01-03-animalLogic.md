@@ -23,7 +23,7 @@ isPost: false
 </th><td>
 <h2>TVC | Hyundai Sante Fe</h2>
 <h3>Roles Performed</h3>
-<h4>Lead Modelling | Rigging Billboard</h4>
+<h4>Modelling | Rigging Billboard</h4>
 </td></tr>
 
 <tr><th>
