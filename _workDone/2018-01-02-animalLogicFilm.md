@@ -22,7 +22,7 @@ isPost: false
 </th><td>
 <h2>The Divergent Series: Allegiant</h2>
 <h3>Roles Performed</h3>
-<h4>"Lead" Rigging (1 rigger for this at AL) + Layout python tools | Modelling tools for City Build.</h4>
+<h4>Rigger(flying solo - without rigSup) + Layout python tools | Modelling tools for City Build.</h4>
 </td></tr>
 
 <tr><th>
@@ -30,7 +30,7 @@ isPost: false
 </th><td>
 <h2>The Great Wall</h2>
 <h3>Roles Performed</h3>
-<h4>"Lead" Rigging (1 rigger for this a AL) - Balloon rigs, ILM char rig xfers, RopeFX for wall scaling shots.</h4>
+<h4>Rigging(flying solo - without rigSup) - Balloon rigs, ILM char rig xfers, RopeFX for wall scaling shots.</h4>
 </td></tr>
 
 <tr><th>
@@ -63,7 +63,7 @@ isPost: false
 </th><td>
 <h2>Monk Comes Down The Mountain</h2>
 <h3>Roles Performed</h3>
-<h4>Rigging - Characters / DigiDoubles / Props</h4>
+<h4>Rigging(flying solo - with rigSup) - Characters / DigiDoubles / Props</h4>
 </td></tr>
 
 <tr><th>
@@ -71,7 +71,7 @@ isPost: false
 </th><td>
 <h2>The Hunger Games - Catching Fire</h2>
 <h3>Roles Performed</h3>
-<h4>Rigging - Archery practice sequence, Python tools for mocap transfers etc for cube characters.</h4>
+<h4>Rigging(flying solo - without rigSup) - Archery practice sequence, Python tools for mocap transfers etc for cube characters.</h4>
 </td></tr>
 
 <tr><th>
@@ -79,7 +79,7 @@ isPost: false
 </th><td>
 <h2>IronMan 3</h2>
 <h3>Roles Performed</h3>
-<h4>Rigging - Working on explosion effect for shot in war room scene mainly.</h4>
+<h4>Rigging(flying solo - without rigSup) - Working on explosion effect for shot in war room scene mainly.</h4>
 </td></tr>
 
 </table>
