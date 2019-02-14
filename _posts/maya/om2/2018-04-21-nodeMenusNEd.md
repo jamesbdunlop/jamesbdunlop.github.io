@@ -18,10 +18,13 @@ So I tried this out immediately;
 
 {% gist a4bbcfcf023fa5df560a4cd813beff09 %}
 
-Now I wouldn't approach this like this. I'm going to look at a way to get this cleaned up and see about adding some
-of these to my node editor, cause it definitely frustrates me having to go for buttons all the time when prototyping
+Now I wouldn't approach this like this. I'm going to look at a way to get
+this cleaned up and see about adding some
+of these to my node editor, cause it definitely frustrates me having to
+go for buttons all the time when prototyping
 rigs.
 <br>
-At some point I'm going to have rounded up a script to cleanup the entire nodeEditor to how I like it, filters, menus etc.
+At some point I'm going to have rounded up a script to cleanup the entire
+nodeEditor to how I like it, filters, menus etc.
 <br>
 <center><img src="/assets/examples/nodeEditorMenu2.png" alt="nodeMenuResults"></center>
