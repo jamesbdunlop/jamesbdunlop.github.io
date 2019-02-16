@@ -7,8 +7,16 @@ usage: "Please see the commented code at the bottom for usage"
 lastUpdated: "02-15-2019"
 category: om2
 ---
+
+WORK IN PROGRESS
+Prob posted this a bit soon, still okay to ref the concept but I'm
+getting different mem address' for the funcs in the class now compared to
+maya
+will fix that asap and update the post..
+
+
 <a href ="https://github.com/jamesbdunlop/neMenuManager">GitHubRepo</a>
-with all the current WIP files for this little side proj.
+With all the current WIP files for this little side proj.
 
 So the nodeEditor in Maya can register commands on nodes using
 customInclusiveNodeItemMenuCallbacks: <a href="https://jamesbdunlop.github.io/om2/2018/04/21/nodeMenusNEd.html">Part01</a>
@@ -36,7 +44,7 @@ NodeEditor in Maya.
 ## The Factory -Menu Cache ##
 
 {% highlight python %}
-import os, pprint
+import os
 import importlib, inspect
 import logging
 logging.basicConfig()
@@ -44,36 +52,28 @@ logger = logging.getLogger(__name__)
 
 BASE = os.path.dirname(__file__)
 MENUSPATH = "{}/menus".format(BASE)
-
-
 MENUCACHE = {}
+
 def createMenuCache(path=MENUSPATH, pkg="menus"):
     """
-    Recurisvely fetch all the .py modules in the menus folder and any
-    classes defined as a menu and add these to the cache
+    Recurisvely fetch all the .py modules in the menus folder and any classes defined as a menu and add these to the
+    cache
     :param path: `str` path to the root menus folder
     :param pkg: `str` .separated path for the importlib.import_module to use
     """
     for module in os.listdir(path):
-        if module == '__init__.py' or module.endswith(".pyc"):
+        if module == '__init__.py' or module.endswith(".pyc") or module == "base.py":
             continue
 
         if module.endswith(".py"):
-            mod = importlib.import_module(name=".{}".format(module[:-3]),
-            package=pkg)
+            mod = importlib.import_module(name=".{}".format(module[:-3]), package=pkg)
             for eachMenu in inspect.getmembers(mod, inspect.isclass):
                 MENUCACHE[eachMenu[1].ID] = eachMenu[1]
         else:
-            createMenuCache(path="{}/{}".format(path, module),
-            pkg="{}.{}".format(pkg, module))
-
-    logger.info("MenuCache:")
-    pprint.pprint(MENUCACHE)
+            createMenuCache(path="{}/{}".format(path, module), pkg="{}.{}".format(pkg, module))
 
 if __name__ == "__main__":
     createMenuCache(MENUSPATH)
-
-
 {% endhighlight %}
 
 What this is doing is setting the base path to */menus relative to the
@@ -178,7 +178,7 @@ eg: adding/removing menus from the nodeEditor as expected.
 {% highlight python %}
 from maya.app.general import nodeEditorMenus
 import logging
-import menuFactory as neFactory
+import menuFactory as ne_factory
 logging.basicConfig()
 logger = logging.getLogger(__name__)
 """
@@ -189,17 +189,26 @@ if path not in sys.path:
     sys.path.append(path)
 
 import neMenuManager as neMM
-neM = neMM.NodeEditorMenuManager()
+nedMenuManager = neMM.NodeEditorMenuManager()
+for id, e in nedMenuManager.iterMenuItems():
+    print(id)
 """
+
 
 class NodeEditorMenuManager(object):
     def __init__(self, autoLoadMenus=True):
         self.menus = nodeEditorMenus.customInclusiveNodeItemMenuCallbacks
+        self._ids = []
 
         if autoLoadMenus:
-            logger.info("AutoLoading nodeEditor menus now... {}".format(neFactory.MENUCACHE.keys()))
-            for id, menu in neFactory.MENUCACHE.iteritems():
+            logger.info("AutoLoading nodeEditor menus")
+            if not ne_factory.MENUCACHE:
+                logger.warning("Creating MENUCACHE now!")
+                ne_factory.createMenuCache()
+
+            for id, menu in ne_factory.MENUCACHE.iteritems():
                 self.addMenu(menu=menu)
+                self._ids.append(id)
 
     def addMenu(self, menu):
         """
@@ -210,9 +219,9 @@ class NodeEditorMenuManager(object):
 
     def iterMenuItems(self):
         """
-        :return: `int` `list`
+        :return: `int` `MenuBase() Instance`
         """
-        for id, data in neFactory.MENUCACHE.iteritems():
+        for id, data in ne_factory.MENUCACHE.iteritems():
             yield id, data
 
     def removeMenu(self, menuid):
@@ -221,30 +230,33 @@ class NodeEditorMenuManager(object):
         :return: `bool`
         """
         logger.info("Removing id {}".format(menuid))
-        for id, menu in neFactory.MENUCACHE:
-            if id == menuid:
-                self.menus.remove(menu.menufunction())
-                neFactory.MENUCACHE.pop(menuid, None)
-                logger.info("Successfully removed menu!")
-                return True
+        if menuid in ne_factory.MENUCACHE.keys():
+            self.menus.remove(ne_factory.MENUCACHE[menuid].menufunction())
+            ne_factory.MENUCACHE.pop(menuid, None)
+            self._ids.remove(menuid)
+
+            logger.info("Successfully removed menu!")
+            return True
 
         logger.warning("Failed to remove menu!")
         return False
 
+    def removeAll(self):
+        # Remove all the menus before a reload!
+        for eachID in self._ids:
+            self.removeMenu(menuid=eachID)
+
     def __repr__(self):
         str = "menuItems:\n"
         for k, v in self.iterMenuItems():
-            str += "\tid: {} | node: {} name: {} \t| isradial: {} | pos: {}\n".format(
-                k, v[0].NODENAME, v[0].MENUNAME, v[0].isRadial(), v[0].radialPos())
+            str += "\t id: {}".format(k)
+            str += "\t name: {}".format(v().name())
+            str += "\t nodeType: {}".format(v().nodeType())
+            str += "\t isradial: {}".format(v().isRadial())
+            str += "\t pos: {}\n".format(v().radialPos())
+
+        return str
+
 
 {% endhighlight %}
 
-When the user imports neManager the __init__.py calls for the cache to be
-created
-
-__init.py__
-{% highlight python %}
-## Cache all the menus on importing the NEdMenuManager
-import NEdMenuManager.factory as nefactory
-nefactory.createMenuCache()
-{% endhighlight %}
