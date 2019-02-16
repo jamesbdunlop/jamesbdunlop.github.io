@@ -56,8 +56,8 @@ MENUCACHE = {}
 
 def createMenuCache(path=MENUSPATH, pkg="menus"):
     """
-    Recurisvely fetch all the .py modules in the menus folder and any classes defined as a menu and add these to the
-    cache
+    Recurisvely fetch all the .py modules in the menus folder and any
+    classes defined as a menu and add these to the cache
     :param path: `str` path to the root menus folder
     :param pkg: `str` .separated path for the importlib.import_module to use
     """
@@ -72,9 +72,6 @@ def createMenuCache(path=MENUSPATH, pkg="menus"):
                 MENUCACHE[menu.id()] = menu
         else:
             createMenuCache(path="{}/{}".format(path, module), pkg="{}.{}".format(pkg, module))
-
-if __name__ == "__main__":
-    createMenuCache(MENUSPATH)
 {% endhighlight %}
 
 What this is doing is setting the base path to */menus relative to the
@@ -155,8 +152,6 @@ class MenuBase(object):
             return menuCmd
         else:
             return self._func
-
-
 {% endhighlight %}
 
 ## Creating a menu.py ##
@@ -178,9 +173,9 @@ class MENUNAME(nem_base.MenuBase):
     def __init__(self):
         nem_base.MenuBase.__init__(self, isRadial=True, radialPos="S")
 {% endhighlight %}
-
+eg: <a href="https://github.com/jamesbdunlop/neMenuManager/blob/master/menus/nodes/hermite.py#L29">gitHub example</a>
 So Here each menu gets a unique typeID, Name, and a function to call.
-No args handled atm.
+Note; No args are handled atm.
 And each class has a related mayaNode that they are linked to when you
 invoke a menu call in maya by right clicking over a node in the nodeEditor
 
