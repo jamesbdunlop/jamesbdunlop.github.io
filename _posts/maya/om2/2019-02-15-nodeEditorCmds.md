@@ -83,10 +83,7 @@ Menu base is the base menu class used by the neMenuManager to create
 the menus as expected in Maya.
 
 {% highlight python %}
-try: #try except for standalone testing only
-    from maya import cmds
-except ImportError:
-    pass
+from maya import cmds
 from menus import typeIDs as nem_typeids
 import logging
 logging.basicConfig()
