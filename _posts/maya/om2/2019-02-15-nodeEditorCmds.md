@@ -34,6 +34,10 @@ I want to create menus for.
 Then the manager itself leverages that cache to add the menus to the
 NodeEditor in Maya.
 
+<img src= "/assets/defaulMenus.png" width="577" height="422" alt="defaultMenus"><br>
+<img src= "/assets/neMenu.png" width="577" height="422" alt="customMenus"><br>
+
+
 ## The Factory -Menu Cache ##
 
 {% highlight python %}
