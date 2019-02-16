@@ -8,13 +8,6 @@ lastUpdated: "02-15-2019"
 category: om2
 ---
 
-WORK IN PROGRESS
-Prob posted this a bit soon, still okay to ref the concept but I'm
-getting different mem address' for the funcs in the class now compared to
-maya
-will fix that asap and update the post..
-
-
 <a href ="https://github.com/jamesbdunlop/neMenuManager">GitHubRepo</a>
 With all the current WIP files for this little side proj.
 
