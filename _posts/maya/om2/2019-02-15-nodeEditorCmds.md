@@ -68,7 +68,8 @@ def createMenuCache(path=MENUSPATH, pkg="menus"):
         if module.endswith(".py"):
             mod = importlib.import_module(name=".{}".format(module[:-3]), package=pkg)
             for eachMenu in inspect.getmembers(mod, inspect.isclass):
-                MENUCACHE[eachMenu[1].ID] = eachMenu[1]
+                menu = eachMenu[1]()
+                MENUCACHE[menu.id()] = menu
         else:
             createMenuCache(path="{}/{}".format(path, module), pkg="{}.{}".format(pkg, module))
 
@@ -106,11 +107,12 @@ class MenuBase(object):
     ID = nem_typeids.BASEID
     MENUNAME = ""
     NODENAME = ""
-    FUNCTION = ""
+    FUNCTION = None
 
     def __init__(self, isRadial=False, radialPos=""):
         self.__isRadial = isRadial
         self.__radialPos = radialPos
+        self._func = None
 
     def menu(self):
         """
@@ -119,6 +121,15 @@ class MenuBase(object):
         """
         raise NotImplementedError("Not implemented")
 
+    def id(self):
+        return self.ID
+
+    def name(self):
+        return self.MENUNAME
+
+    def nodeType(self):
+        return self.NODENAME
+
     def isRadial(self):
         return self.__isRadial
 
@@ -126,21 +137,25 @@ class MenuBase(object):
         return self.__radialPos
 
     def menufunction(self):
-        def menuCmd(ned, node):
-            if cmds.nodeType(node) == self.NODENAME:
-                try:
-                    cmds.menuItem(label=self.MENUNAME,
-                    radialPosition=self.radialPos(),
-                    c=self.FUNCTION)
-                    return True
-                except RuntimeError:
-                    logger.warning("Can not create a valid menu item
-                    for {}".format(self.MENUNAME))
-                    return False
-            else:
-                return False
+        if self.FUNCTION is None:
+            return
 
-        return menuCmd
+        if self._func is None:
+            def menuCmd(ned, node):
+                if cmds.nodeType(node) == self.NODENAME:
+                    try:
+                        cmds.menuItem(label=self.MENUNAME, radialPosition=self.radialPos(), c=self.FUNCTION)
+                        return True
+                    except RuntimeError:
+                        logger.warning("Can not create a valid menu item for {}".format(self.MENUNAME))
+                        return False
+                else:
+                    return False
+            self._func = menuCmd
+            return menuCmd
+        else:
+            return self._func
+
 
 {% endhighlight %}
 
@@ -150,7 +165,7 @@ for me to use when adding a new menu item to the nodeEditor.
 
 eg: menus/nodes/hermite.py
 {% highlight python %}
-def createOutputJnts(*args):
+def FUNCNAME(*args):
     # This is the function to execute in the class stored in the
     # FUNCTION const
 
@@ -158,7 +173,7 @@ class MENUNAME(nem_base.MenuBase):
     ID = nem_typeids.A_UNIQUE_INT
     MENUNAME = nem_typeids.A_UNIQUE_STR
     NODENAME = nem_typeids.A_UNIQUE_VALIDMAYANODENAME_asSTR
-    FUNCTION = createOutputJnts
+    FUNCTION = FUNCNAME
 
     def __init__(self):
         nem_base.MenuBase.__init__(self, isRadial=True, radialPos="S")
@@ -199,13 +214,15 @@ class NodeEditorMenuManager(object):
     def __init__(self, autoLoadMenus=True):
         self.menus = nodeEditorMenus.customInclusiveNodeItemMenuCallbacks
         self._ids = []
+        if ne_factory.MENUCACHE:
+            self._ids = ne_factory.keys()
+            self.removeAll()
+        else:
+            logger.warning("Creating MENUCACHE now!")
+            ne_factory.createMenuCache()
 
         if autoLoadMenus:
             logger.info("AutoLoading nodeEditor menus")
-            if not ne_factory.MENUCACHE:
-                logger.warning("Creating MENUCACHE now!")
-                ne_factory.createMenuCache()
-
             for id, menu in ne_factory.MENUCACHE.iteritems():
                 self.addMenu(menu=menu)
                 self._ids.append(id)
@@ -214,8 +231,9 @@ class NodeEditorMenuManager(object):
         """
         :param menu: `MenuBase` instance
         """
-        self.menus.append(menu().menufunction())
-        logger.info("{}|{} id:{}".format(menu.NODENAME, menu.MENUNAME, menu.ID))
+        if menu.menufunction() is not None:
+            self.menus.append(menu.menufunction())
+            logger.info("Added: {}|{} id:{} func: {}".format(menu.nodeType(), menu.name(), menu.id(), menu.menufunction()))
 
     def iterMenuItems(self):
         """
@@ -231,7 +249,12 @@ class NodeEditorMenuManager(object):
         """
         logger.info("Removing id {}".format(menuid))
         if menuid in ne_factory.MENUCACHE.keys():
-            self.menus.remove(ne_factory.MENUCACHE[menuid].menufunction())
+            try:
+                self.menus.remove(ne_factory.MENUCACHE[menuid].menufunction())
+            except ValueError:
+                logger.warning("Failed to remove menuid: {} from maya's internal callback list!".format(menuid))
+                return False
+
             ne_factory.MENUCACHE.pop(menuid, None)
             self._ids.remove(menuid)
 
@@ -242,21 +265,23 @@ class NodeEditorMenuManager(object):
         return False
 
     def removeAll(self):
-        # Remove all the menus before a reload!
+        """Remove all the menus before a reload!"""
         for eachID in self._ids:
             self.removeMenu(menuid=eachID)
+
+    def currentCache(self):
+        return ne_factory.MENUCACHE
 
     def __repr__(self):
         str = "menuItems:\n"
         for k, v in self.iterMenuItems():
             str += "\t id: {}".format(k)
-            str += "\t name: {}".format(v().name())
-            str += "\t nodeType: {}".format(v().nodeType())
-            str += "\t isradial: {}".format(v().isRadial())
-            str += "\t pos: {}\n".format(v().radialPos())
+            str += "\t name: {}".format(v.name())
+            str += "\t nodeType: {}".format(v.nodeType())
+            str += "\t isradial: {}".format(v.isRadial())
+            str += "\t pos: {}\n".format(v.radialPos())
+            str += "\t func: {}\n".format(v.menufunction())
 
         return str
-
-
 {% endhighlight %}
 
