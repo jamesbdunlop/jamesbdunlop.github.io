@@ -74,6 +74,21 @@ webkitallowfullscreen="true"></iframe>
 Image for my Brother in Law<br>
 <img src= "/assets/personal/forPhilsm.png" width="800" height="341" alt="eddie"><br>
 <img src= "/assets/personal/forPhil3Dsm.png" width="800" height="446" alt="eddieZbrush">
+<div class="sketchfab-embed-wrapper"><iframe width="960" height="480"
+src="https://sketchfab.com/models/c3536a94fbf0491f9d9461887f2ca61f/embed?
+autospin=0.4"
+frameborder="0"
+allow="autoplay;
+fullscreen; vr"
+mozallowfullscreen="true"
+webkitallowfullscreen="true"></iframe>
+
+<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/3d-models/eddie-fanart-c3536a94fbf0491f9d9461887f2ca61f?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Eddie FanArt</a>
+    by <a href="https://sketchfab.com/jamesbdunlop?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jamesbdunlop</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p>
+</div>
 
 <br><br><br><br>
 <h3>:C++ nodes </h3>
