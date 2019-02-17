@@ -204,7 +204,7 @@ class NodeEditorMenuManager(object):
         self.menus = nodeEditorMenus.customInclusiveNodeItemMenuCallbacks
         self._ids = []
         if ne_factory.MENUCACHE:
-            self._ids = ne_factory.keys()
+            self._ids = ne_factory.MENUCACHE.keys()
             self.removeAll()
         else:
             logger.warning("Creating MENUCACHE now!")
