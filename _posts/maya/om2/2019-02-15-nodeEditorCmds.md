@@ -4,9 +4,10 @@ title: "om2-NodeEditorMenuManger"
 isPost: true
 description: "Used to manger node editor right click menus"
 usage: "Please see the commented code at the bottom for usage"
-lastUpdated: "02-15-2019"
+lastUpdated: "02-19-2019"
 category: om2
 ---
+! Updated for submenus
 
 <a href ="https://github.com/jamesbdunlop/neMenuManager">GitHubRepo</a>
 With all the current WIP files for this little side proj.
@@ -51,10 +52,13 @@ BASE = os.path.dirname(__file__)
 MENUSPATH = "{}/menus".format(BASE)
 MENUCACHE = {}
 
+
 def createMenuCache(path=MENUSPATH, pkg="menus"):
     """
     Recurisvely fetch all the .py modules in the menus folder and any
     classes defined as a menu and add these to the cache
+
+
     :param path: `str` path to the root menus folder
     :param pkg: `str` .separated path for the importlib.import_module to use
     """
@@ -65,8 +69,15 @@ def createMenuCache(path=MENUSPATH, pkg="menus"):
         if module.endswith(".py"):
             mod = importlib.import_module(name=".{}".format(module[:-3]), package=pkg)
             for eachMenu in inspect.getmembers(mod, inspect.isclass):
-                menu = eachMenu[1]()
-                MENUCACHE[menu.id()] = menu
+                if not eachMenu[1].ISSUBMENU:
+                    menu = eachMenu[1]()
+                    if menu.menufunction() is not None:
+                        MENUCACHE[menu.id()] = menu
+
+                    if menu.hasSubMenu():
+                        for eachChild in menu.subMenus():
+                            MENUCACHE[eachChild.id()] = eachChild
+
         else:
             createMenuCache(path="{}/{}".format(path, module), pkg="{}.{}".format(pkg, module))
 {% endhighlight %}
@@ -88,29 +99,27 @@ the menus as expected in Maya.
 
 {% highlight python %}
 from maya import cmds
-from menus import typeIDs as nem_typeids
 import logging
 logging.basicConfig()
 logger = logging.getLogger(__name__)
 
 
 class MenuBase(object):
-    ID = nem_typeids.BASEID
-    MENUNAME = ""
-    NODENAME = ""
+    ID = None
+    MENUNAME = None
+    NODENAME = None
     FUNCTION = None
+    ISSUBMENU = False
+    SUBMENUS = list()
 
-    def __init__(self, isRadial=False, radialPos=""):
+    def __init__(self, isRadial=False, radialPos="", hasSubMenu=False):
         self.__isRadial = isRadial
         self.__radialPos = radialPos
-        self._func = None
-
-    def menu(self):
-        """
-
-        :return: `function`
-        """
-        raise NotImplementedError("Not implemented")
+        self.__func = None
+        self.__hasSubMenu = hasSubMenu
+        # Set the cmd instance on init we want to create only ONE instance of the menuCmd.
+        # So well force that now and reuse it thereafter
+        self.menufunction()
 
     def id(self):
         return self.ID
@@ -127,48 +136,73 @@ class MenuBase(object):
     def radialPos(self):
         return self.__radialPos
 
+    def createMenuItem(self):
+        if self.FUNCTION is None:
+            return
+
+        if self.isRadial():
+            self._menuItem = cmds.menuItem(label=self.MENUNAME, c=self.FUNCTION,
+                                           subMenu=self.hasSubMenu(),
+                                           radialPosition=self.radialPos(),
+                                           )
+            if self.ISSUBMENU:
+                # Reset the maya internal parent so we don't end up
+                # with all subsequent menus parented under this one!!
+                cmds.setParent("..", menu=True)
+        else:
+            self._menuItem = cmds.menuItem(label=self.MENUNAME, c=self.FUNCTION,
+                                           subMenu=self.hasSubMenu(),
+                                           )
+            if self.ISSUBMENU:
+                # Reset the maya internal parent so we don't end up
+                # with all subsequent menus parented under this one!!
+                cmds.setParent("..", menu=True)
+        return self._menuItem
+
+    def hasSubMenu(self):
+        return self.__hasSubMenu
+
+    def subMenus(self):
+        return self.SUBMENUS
+
+    def subMenus(self):
+        return self.SUBMENUS
+
     def menufunction(self):
         if self.FUNCTION is None:
             return
 
-        if self._func is None:
-            def menuCmd(ned, node):
-                if cmds.nodeType(node) == self.NODENAME:
-                    try:
-                        cmds.menuItem(label=self.MENUNAME, radialPosition=self.radialPos(), c=self.FUNCTION)
+        if self.__func is None:
+            if self.NODENAME is not None:
+                # Create the menu command for the node we have rightClicked over in Maya
+                def menuCmd(ned, node):
+                    if cmds.nodeType(node) == self.NODENAME:
+                        self.createMenuItem()
                         return True
-                    except RuntimeError:
-                        logger.warning("Can not create a valid menu item for {}".format(self.MENUNAME))
+                    else:
                         return False
-                else:
-                    return False
-            self._func = menuCmd
+            else:
+                # Add a general menu to all nodes. Take care with Radial positions here as you might clash with a node
+                # based menu item!
+                def menuCmd(ned, node):
+                    self.createMenuItem()
+                    return True
+
+            self.__func = menuCmd
             return menuCmd
         else:
-            return self._func
+            return self.__func
+
 {% endhighlight %}
 
 ## Creating a menu.py ##
-So inheriting / overloading this class is then fairly straight foward
+So inheriting / overloading this class is then fairly straight forward
 for me to use when adding a new menu item to the nodeEditor.
-
-eg: menus/nodes/hermite.py
-{% highlight python %}
-def FUNCNAME(*args):
-    # This is the function to execute in the class stored in the
-    # FUNCTION const
-
-class MENUNAME(nem_base.MenuBase):
-    ID = nem_typeids.A_UNIQUE_INT
-    MENUNAME = nem_typeids.A_UNIQUE_STR
-    NODENAME = nem_typeids.A_UNIQUE_VALIDMAYANODENAME_asSTR
-    FUNCTION = FUNCNAME
-
-    def __init__(self):
-        nem_base.MenuBase.__init__(self, isRadial=True, radialPos="S")
-{% endhighlight %}
 eg: <a href="https://github.com/jamesbdunlop/neMenuManager/blob/master/menus/nodes/hermite.py#L29">gitHub example</a>
-So Here each menu gets a unique typeID, Name, and a function to call.
+<br>
+If you check the latest version of the file you can see each menu gets a
+unique typeID, Name, and a function to call.
+
 Note; No args are handled atm.
 And each class has a related mayaNode that they are linked to when you
 invoke a menu call in maya by right clicking over a node in the nodeEditor
@@ -181,8 +215,8 @@ eg: adding/removing menus from the nodeEditor as expected.
 
 {% highlight python %}
 from maya.app.general import nodeEditorMenus
-import logging
 import menuFactory as ne_factory
+import logging
 logging.basicConfig()
 logger = logging.getLogger(__name__)
 """
@@ -193,25 +227,33 @@ if path not in sys.path:
     sys.path.append(path)
 
 import neMenuManager as neMM
-nedMenuManager = neMM.NodeEditorMenuManager()
+nedMenuManager = neMM.NodeEditorMenuManager(autoLoadMenus=True, reload=False)
 for id, e in nedMenuManager.iterMenuItems():
     print(id)
 """
 
 
 class NodeEditorMenuManager(object):
-    def __init__(self, autoLoadMenus=True):
+    def __init__(self, autoLoadMenus=True, reload=False):
         self.menus = nodeEditorMenus.customInclusiveNodeItemMenuCallbacks
         self._ids = []
+        if reload:
+            logger.warning("Resetting ne_factory.MENUCACHE now!")
+            ne_factory.MENUCACHE = {}
+
         if ne_factory.MENUCACHE:
+            # We should REMOVE any previously appeded functions in maya or we end up with duplicates!
             self._ids = ne_factory.MENUCACHE.keys()
             self.removeAll()
         else:
-            logger.warning("Creating MENUCACHE now!")
+            logger.warning("Creating ne_factory.MENUCACHE now!")
             ne_factory.createMenuCache()
 
         if autoLoadMenus:
-            logger.info("AutoLoading nodeEditor menus")
+            # Maya sucks at editing the menus, so we're going to iter twice. First for the mainMenu items
+            # Then again for anything flagged as a subMenu of something else.
+            # This means we only EVER go 1 level deep menu|subMenu NOT menu|menu|subMenu
+
             for id, menu in ne_factory.MENUCACHE.iteritems():
                 self.addMenu(menu=menu)
                 self._ids.append(id)
@@ -222,7 +264,7 @@ class NodeEditorMenuManager(object):
         """
         if menu.menufunction() is not None:
             self.menus.append(menu.menufunction())
-            logger.info("Added: {}|{} id:{} func: {}".format(menu.nodeType(), menu.name(), menu.id(), menu.menufunction()))
+            logger.info("Added: {} id:{} func: {}".format(menu.name(), menu.id(), menu.menufunction()))
 
     def iterMenuItems(self):
         """
@@ -236,27 +278,27 @@ class NodeEditorMenuManager(object):
         :param menuid: `int`
         :return: `bool`
         """
-        logger.info("Removing id {}".format(menuid))
         if menuid in ne_factory.MENUCACHE.keys():
+            menu = ne_factory.MENUCACHE[menuid]
             try:
-                self.menus.remove(ne_factory.MENUCACHE[menuid].menufunction())
+                self.menus.remove(menu.menufunction())
             except ValueError:
-                logger.warning("Failed to remove menuid: {} from maya's internal callback list!".format(menuid))
+                logger.warning("Failed to remove {} from maya's internal callback list!".format(menu.name()))
                 return False
 
             ne_factory.MENUCACHE.pop(menuid, None)
             self._ids.remove(menuid)
 
-            logger.info("Successfully removed menu!")
+            logger.info("Successfully removed menu {}".format(menu.name()))
             return True
 
-        logger.warning("Failed to remove menu!")
         return False
 
     def removeAll(self):
         """Remove all the menus before a reload!"""
-        for eachID in self._ids:
-            self.removeMenu(menuid=eachID)
+        while self._ids:
+            for eachID in self._ids:
+                self.removeMenu(menuid=eachID)
 
     def currentCache(self):
         return ne_factory.MENUCACHE
@@ -268,9 +310,10 @@ class NodeEditorMenuManager(object):
             str += "\t name: {}".format(v.name())
             str += "\t nodeType: {}".format(v.nodeType())
             str += "\t isradial: {}".format(v.isRadial())
-            str += "\t pos: {}\n".format(v.radialPos())
+            str += "\t pos: {}".format(v.radialPos())
             str += "\t func: {}\n".format(v.menufunction())
 
         return str
+
 {% endhighlight %}
 
