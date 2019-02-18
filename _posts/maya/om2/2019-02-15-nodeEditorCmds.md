@@ -7,12 +7,11 @@ usage: "Please see the commented code at the bottom for usage"
 lastUpdated: "02-19-2019"
 category: om2
 ---
-! Updated for submenus
+! Updated for submenus !
 
-<a href ="https://github.com/jamesbdunlop/neMenuManager">GitHubRepo</a>
-With all the current WIP files for this little side proj.
+<a href="https://github.com/jamesbdunlop/neMenuManager">GitHub Repo WIP Code</a>
 
-So the nodeEditor in Maya can register commands on nodes using
+So the nodeEditor in Maya can register commands on Nodes using
 customInclusiveNodeItemMenuCallbacks: <a href="https://jamesbdunlop.github.io/om2/2018/04/21/nodeMenusNEd.html">Part01</a>
 
 The problem I found with this is it's a bit hellish to manage (especially

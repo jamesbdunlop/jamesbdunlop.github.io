@@ -8,6 +8,8 @@ lastUpdated: "04-21-2018"
 category: om2
 ---
 
+<a href="https://jamesbdunlop.github.io/om2/2019/02/15/nodeEditorCmds.html">More recent Part 2</a>
+
 <center><img src="/assets/examples/nodeEditorMenu.png" alt="nodeMenu"></center>
 
 So stumbled on something interesting tonight. Figured I'd post about it.
