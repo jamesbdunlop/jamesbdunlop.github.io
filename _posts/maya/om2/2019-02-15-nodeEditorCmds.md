@@ -2,9 +2,9 @@
 layout: codePost
 title: "om2-NodeEditorMenuManger"
 isPost: true
-description: "Used to manger node editor right click menus"
+description: "Used to mange nodeEditor right click menus"
 usage: "Please see the commented code at the bottom for usage"
-lastUpdated: "02-19-2019"
+lastUpdated: "02-19-2019" - More than 1 subMenu
 category: om2
 ---
 ! Updated for submenus !
@@ -111,11 +111,12 @@ class MenuBase(object):
     ISSUBMENU = False
     SUBMENUS = list()
 
-    def __init__(self, isRadial=False, radialPos="", hasSubMenu=False):
+    def __init__(self, isRadial=False, radialPos="", hasSubMenu=False, lastSubMenu=False):
         self.__isRadial = isRadial
         self.__radialPos = radialPos
         self.__func = None
         self.__hasSubMenu = hasSubMenu
+        self.__lastSubMenu = lastSubMenu
         # Set the cmd instance on init we want to create only ONE instance of the menuCmd.
         # So well force that now and reuse it thereafter
         self.menufunction()
@@ -144,7 +145,7 @@ class MenuBase(object):
                                            subMenu=self.hasSubMenu(),
                                            radialPosition=self.radialPos(),
                                            )
-            if self.ISSUBMENU:
+            if self.ISSUBMENU and self.__lastSubMenu:
                 # Reset the maya internal parent so we don't end up
                 # with all subsequent menus parented under this one!!
                 cmds.setParent("..", menu=True)
@@ -152,7 +153,7 @@ class MenuBase(object):
             self._menuItem = cmds.menuItem(label=self.MENUNAME, c=self.FUNCTION,
                                            subMenu=self.hasSubMenu(),
                                            )
-            if self.ISSUBMENU:
+            if self.ISSUBMENU and self.__lastSubMenu:
                 # Reset the maya internal parent so we don't end up
                 # with all subsequent menus parented under this one!!
                 cmds.setParent("..", menu=True)
