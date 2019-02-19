@@ -4,7 +4,7 @@ title: "om2-NodeEditorMenuManger"
 isPost: true
 description: "Used to mange nodeEditor right click menus"
 usage: "Please see the commented code at the bottom for usage"
-lastUpdated: "02-19-2019" - More than 1 subMenu
+lastUpdated: "02-19-2019  - More than 1 subMenu"
 category: om2
 ---
 ! Updated for submenus !
