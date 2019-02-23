@@ -10,7 +10,7 @@ category: om2
 
 <a href="https://jamesbdunlop.github.io/om2/2019/02/15/nodeEditorCmds.html">More recent Part 2</a>
 
-<center><img src="/assets/examples/nodeEditorMenu.png" alt="nodeMenu"></center>
+<center><img src="http://anim83d.com/images/examples/nodeEditorMenu.png" alt="nodeMenu"></center>
 
 So stumbled on something interesting tonight. Figured I'd post about it.
 <a href="https://help.autodesk.com/view/MAYAUL/2018/ENU/?guid=GUID-834BD274-8A3C-4CCB-81EC-0D2A599CA108">Create custom marking menus in the Node Editor</a>
@@ -29,4 +29,4 @@ rigs.
 At some point I'm going to have rounded up a script to cleanup the entire
 nodeEditor to how I like it, filters, menus etc.
 <br>
-<center><img src="/assets/examples/nodeEditorMenu2.png" alt="nodeMenuResults"></center>
+<center><img src="http://anim83d.com/images/examples/nodeEditorMenu2.png" alt="nodeMenuResults"></center>

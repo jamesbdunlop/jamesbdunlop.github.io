@@ -8,7 +8,7 @@ lastUpdated: "04-21-2018"
 category: om2
 ---
 
-<center><img src="/assets/examples/AECallBack.gif" w="640" h="480" alt="AECallBack"></center>
+<center><img src="http://anim83d.com/images/examples/AECallBack.gif" w="640" h="480" alt="AECallBack"></center>
 
 The above gif is the result of: <a href="https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-1BB52D1E-AA28-438E-A008-A0F4173D20FD-htm.html">Use callbacks in Attribute Editor templates</a>
 
@@ -51,7 +51,7 @@ maya crashes as expected.
 
 Hope this sheds some light on the AE Callbacks etc. Definitely one to keep stashed somewhere for future.
 
-<center><img src="/assets/examples/aeview.png" alt="AEView"></center>
+<center><img src="http://anim83d.com/images/examples/aeview.png" alt="AEView"></center>
 
 {% gist 5861bd99d7f95772afcf8280d036888e %}
 
