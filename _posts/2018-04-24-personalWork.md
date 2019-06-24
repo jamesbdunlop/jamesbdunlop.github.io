@@ -15,7 +15,7 @@ mozallowfullscreen="true"
 webkitallowfullscreen="true"></iframe>
 
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/3d-models/long-face-8290769351474d1b8b84c49386195947?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Long Face</a>
+    <a href="https://sketchfab.com/3d-models/long-face-8290769351474d1b8b84c49386195947?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">SphereStudy02</a>
     by <a href="https://sketchfab.com/jamesbdunlop?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jamesbdunlop</a>
     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 </p>
@@ -32,7 +32,7 @@ mozallowfullscreen="true"
 webkitallowfullscreen="true"></iframe>
 
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/3d-models/snarl-b8107a708e29419fb7f0afeb4729d8ba?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">snarl</a>
+    <a href="https://sketchfab.com/3d-models/snarl-b8107a708e29419fb7f0afeb4729d8ba?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">SphereStudy01</a>
     by <a href="https://sketchfab.com/jamesbdunlop?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jamesbdunlop</a>
     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 </p>
