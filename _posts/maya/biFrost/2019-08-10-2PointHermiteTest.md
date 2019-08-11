@@ -1,6 +1,6 @@
 ---
 layout: codePost
-title: "2PointHermite"
+title: "bifrost-HermiteTest"
 isPost: true
 description: "Messing around with biFrost networks"
 usage: ""
