@@ -45,6 +45,35 @@ isPost: false
 </td></tr>
 
 <tr><th>
+<p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/TAC.png" alt="" border="0" /></p>
+</th><td>
+<h2>TVC | TACs</h2>
+<h3>Roles Performed</h3>
+<h4>Rigging Bike and Man</h4>
+<p><a href="https://vimeo.com/72022442">https://vimeo.com/72022442</a></p>
+</td></tr>
+
+<tr><th>
+<p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/pureBlonde.png" alt="" border="0" /></p>
+</th><td>
+<h2>TVC | PureBlonde</h2>
+<h3>Roles Performed</h3>
+<h4>Marvelous Designer clothing for massive sim. Massive basics pre Rogier Franson's massive sims :) *nod*</h4>
+<p><a href="https://vimeo.com/72022442">https://vimeo.com/72022442</a></p>
+</td></tr>
+
+
+<tr><th>
+<p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/nikeEscape.png" alt="" border="0" /></p>
+</th><td>
+<h2>TVC | Nike-Escape / Gadgets</h2>
+<h3>Roles Performed</h3>
+<h4>Rigging Snakes, props etc</h4>
+<p><a href="https://vimeo.com/70600465">https://vimeo.com/70600465</a></p>
+<p><a href="https://vimeo.com/70577503">https://vimeo.com/70577503</a></p>
+</td></tr>
+
+<tr><th>
 <p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/ALCoke.png" alt="" border="0" /></p>
 </th><td>
 <h2>TVC | Coke Polar</h2>
@@ -148,6 +177,10 @@ isPost: false
 <h2>Roles Performed</h2>
 <h4>Rigging</h4>
 <h4>Animation of the `Niicceee' shot</h4>
+Was a first pass testing XSI's face machine stuff. Can't say I was that happy with the result :)
+<p><a href="https://vimeo.com/37789864">https://vimeo.com/37789864</a></p>
+<p><a href="https://vimeo.com/33798160">https://vimeo.com/33798160</a></p>
+
 </td></tr>
 
 <tr><th>
