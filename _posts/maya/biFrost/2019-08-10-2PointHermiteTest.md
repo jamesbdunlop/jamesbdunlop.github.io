@@ -2,7 +2,7 @@
 layout: codePost
 title: "bifrost-HermiteTest"
 isPost: true
-description: "Messing around with biFrost networks"
+description: "2 pnt crv (translation only) test"
 usage: ""
 lastUpdated: "10-08-2019"
 category: bifrost
