@@ -15,7 +15,7 @@ fullscreen; vr"
 mozallowfullscreen="true"
 webkitallowfullscreen="true"></iframe>
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/3d-models/sphere-study04-6b1a21bac81d4958b462ad2f8e4720cd?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sphere Study04</a>
+    <a href="https://sketchfab.com/3d-models/sphere-study04-6b1a21bac81d4958b462ad2f8e4720cd?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Render Bool Test</a>
     by <a href="https://sketchfab.com/jamesbdunlop?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jamesbdunlop</a>
     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 </p>
@@ -31,7 +31,7 @@ fullscreen; vr"
 mozallowfullscreen="true"
 webkitallowfullscreen="true"></iframe>
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/3d-models/render-bool-test-82189ce72e304679b6613c278158e0eb?utm_medium=embe&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Render Bool Test</a>
+    <a href="https://sketchfab.com/3d-models/render-bool-test-82189ce72e304679b6613c278158e0eb?utm_medium=embe&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sphere Study04</a>
     by <a href="https://sketchfab.com/jamesbdunlop?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jamesbdunlop</a>
     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 </p>
