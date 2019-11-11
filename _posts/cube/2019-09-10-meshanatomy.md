@@ -1,5 +1,5 @@
 ---
-layout: rigACubePost
+layout: default
 title: "mesh anatomy"
 isPost: true
 description: "Atomics of a 3D mesh"
