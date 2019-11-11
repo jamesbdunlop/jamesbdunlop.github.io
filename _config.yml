@@ -3,18 +3,19 @@
 title: James Dunlop Homepage
 description: >-
   My Homepage
+twitter_username: "JamesBDunlop"
+github_username: "jamesbdunlop"
+owner_name: "jamesbdunlop"
+owner_url: "https://jamesbdunlop.github.io/"
 baseurl: ""
 url: ""
-twitter_username: ""
-github_username: "jamesbdunlop"
-owner_url: "https://jamesbdunlop.github.io/"
-owner_name: "jamesbdunlop"
 postURL: "https://jamesbdunlop.github.io/"
 repoURL: ""
+
 # COLLECTION INFO
 collections:
-- workDone
 - about
+- workDone
 
 # Build settings
 markdown: kramdown
@@ -22,6 +23,8 @@ theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
   - jekyll-gist
+  - jekyll-relative-links
+
 github: [metadata]
 
 # DEFAULTS
@@ -32,3 +35,6 @@ defaults:
     values:
       layout: default
 
+relative_links:
+  enabled:     true
+  collections: true

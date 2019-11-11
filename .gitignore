@@ -68,3 +68,5 @@ target/
 
 .idea/
 Thumbs.db
+_site
+.sass-cache

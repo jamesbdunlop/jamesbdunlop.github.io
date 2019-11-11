@@ -5,24 +5,26 @@
 </style>
 
 <nav>
-  <button><a href="{{ site.owner_url }}">Home</a></button>
+  <button><a href="{{ owner_url }}">Home</a></button>
 <br>
 <br>
   <h2>About</h2>
-  {% if site.poseURL %}
-  <li class="fork"><a href="{{ site.postURL }}/2018/01/01/work-done.html">Recent Work</a></li>
-  {% else %}
-  <li class="fork"><a href="{{ site.owner_url }}/2018/01/01/work-done.html">Recent Work</a></li>
-  {% endif %}
-  <li class="fork"><a href="https://www.linkedin.com/in/jamesdunlop/">LinkedIN</a></li>
-  <li class="fork"><a href="{{ site.owner_url }}contact/">Contact</a></li>
-  <li class="fork"><a href="{{ site.owner_url }}/2018/04/24/personalWork.html">Personal Work</a></li>
+    <li class="fork"><a href="{% link _posts/2018-01-01-recentwork.md %}">Recent Work</a></li>
+    <li class="fork"><a href="{% link _posts/2018-04-24-personalWork.md %}">Personal Work</a></li>
+    <li class="fork"><a href="https://www.linkedin.com/in/jamesdunlop/">LinkedIN</a></li>
+    <li class="fork"><a href="{% link contact.html %}">Contact</a></li>
 
 <br>
 <br>
   <h2>Development</h2>
   <li class="title">Maya:</li>
-  <li class="fork"><a href="{{ site.owner_url }}/biFrostPosts.html">biFrost Posts</a></li>
-  <li class="fork"><a href="{{ site.owner_url }}/CPlusPlusPosts.html">C++ Posts</a></li>
-  <li class="fork"><a href="{{ site.owner_url }}/om2Posts.html">om2 Posts</a></li>
+      <li class="fork"><a href="{% link biFrostPosts.md %}">Maya BiFrost Messing</a></li>
+      <li class="fork"><a href="{% link CPlusPlusPosts.md %}">Maya C++ Messing</a></li>
+      <li class="fork"><a href="{% link om2Posts.md %}">Maya Om2 Messing</a></li>
+
+<br>
+  <h2>Training</h2>
+  <li class="title">Rigging:</li>
+      <li class="fork"><a href="{% link rigacube.md %}">Rig A Cube</a></li>
 </nav>
+<br>

@@ -33,15 +33,7 @@ isPost: false
 <h3>Roles Performed</h3>
 <h4>Rigging All | Animation 7 shotsmain opener</h4>
 <p><a href="https://www.youtube.com/watch?v=3oWKMyxc73M">https://www.youtube.com/watch?v=3oWKMyxc73M</a></p>
-</td></tr>
-
-<tr><th>
-<p><img style="margin-center: 10px; width: 120px; height: 60px;" src="/assets/workdone/TAC.png" alt="" border="0" /></p>
-</th><td>
-<h2>TVC | TACs</h2>
-<h3>Roles Performed</h3>
-<h4>Rigging Bike and Man</h4>
-<p><a href="https://www.youtube.com/watch?v=HT666XwJR2s">https://www.youtube.com/watch?v=HT666XwJR2s</a></p>
+<a href="https://www.theloop.com.au/project/animallogic/portfolio/sydney-opera-house-graphic/103876</a></p>
 </td></tr>
 
 <tr><th>
@@ -91,7 +83,7 @@ isPost: false
 <h2>TVC | Future Unlimited</h2>
 <h3>Roles Performed</h3>
 <h4>Modelling | Rigging | Animation DNA Strand</h4>
-<p>https://www.youtube.com/watch?v=BWF2jw5aRu4</p>
+<p><a href="https://www.youtube.com/watch?v=BWF2jw5aRu4">YouTube</a></p>
 </td></tr>
 
 <tr><th>
@@ -102,7 +94,7 @@ isPost: false
 <h4>Rigging main Chars + robot</h4>
 <h4>Animation - Modelling Robot scene</h4>
 <h4>TD Stuff for zeotrope approach</h4>
-<p>https://www.youtube.com/watch?v=xNf5miQ6tWY</p>
+<p><a href="https://www.youtube.com/watch?v=xNf5miQ6tWY">YouTube</a></p>
 </td></tr>
 
 
@@ -131,7 +123,7 @@ isPost: false
 <h3>Roles Performed</h3>
 <h4>Rigging</h4>
 <h4>Some env Modelling - roof and roof dome / edges cleanup</h4>
-<p>https://www.youtube.com/watch?v=WWBW4JhO_VM</p>
+<p><a href="https://www.youtube.com/watch?v=WWBW4JhO_VM">YouTube</a></p>
 </td></tr>
 
 <tr><th>
@@ -215,7 +207,7 @@ Was a first pass testing XSI's face machine stuff. Can't say I was that happy wi
 </th><td>
 <h2>TVC | Nike Flyknit</h2>
 <h3>Roles Performed</h3>
-<h4>Rigging Shoe | Animation Shoe Elements (No lacing effects)<br /><a href="https://www.youtube.com/watch?v=N72BB_J6tBY">https://www.youtube.com/watch?v=N72BB_J6tBY</a></h4>
+<h4>Rigging Shoe | Animation Shoe Elements (No lacing effects)<br /><a href="https://www.youtube.com/watch?v=7HrIpVt3LXY">https://www.youtube.com/watch?v=N72BB_J6tBY</a></h4>
 </td></tr>
 
 <tr><th>
@@ -224,7 +216,6 @@ Was a first pass testing XSI's face machine stuff. Can't say I was that happy wi
 <h2>TVC | KitKat Hippo</h2>
 <h3>Roles Performed</h3>
 <h4>Rigging Bird and Hippo Characters</h4>
-<p>https://www.youtube.com/watch?v=YxUM5PsQkIk</p>
-<p>on vimeo: <a href="index.php/animallogic/274-animallogic">http://anim83d.com/index.php/animallogic/274-animallogic</a></p>
+<p><a href="https://www.youtube.com/watch?v=3eDWpYb8rVQ">Youtube</a></p>
 </td></tr>
 </table>

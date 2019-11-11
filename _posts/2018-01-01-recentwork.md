@@ -1,0 +1,14 @@
+---
+layout: default
+title: "RecentWork"
+---
+
+{% for item in site.workDone %}
+<hr>
+<h1>Company: {{ item.title }}</h1>
+<h2>Roles Performed:</h2>
+{% for eachRole in item.roles %}
+<li>{{eachRole}}</li>
+{% endfor %}
+{{ item.content}}
+{% endfor %}
