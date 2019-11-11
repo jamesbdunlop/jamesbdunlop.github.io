@@ -47,4 +47,4 @@ Here is the default UV for the cube.
 Interesting how the gif `unfolds' the cube to the same shape. You can use 
 UV co-ordinates in rigging to for sticking things to a mesh, etc...
 
-[.. onwards... 3DSpaces](2019-09-11-3dspaces.
+[.. onwards... 3DSpaces](2019-09-11-3dspaces.md)
