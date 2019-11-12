@@ -58,7 +58,7 @@ eg: The `deformation` below looks great huh... btzzz.....
 <img src="http://www.anim83d.com/images/examples/badDeform.png" width="506" height="459" alt="badDeform">
 
 It's really important you get to understand as many `deformers` as possible and 
-how to work with these to get a great all kinds of results. 
+how to work with these to get all kinds of great results. 
 
 "Do I put a slew of `lattice` deformers through my eyelids? or just use 
 `joints`?` `blendshapes`?" etc 
