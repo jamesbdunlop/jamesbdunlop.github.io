@@ -7,8 +7,8 @@ category: rigACube
 ---
 
 A `constraint` is your "middle man" between A and B. Lets assume for now that A is the 
-`control curve` that Animators will use, and B is our Cube for now. Though you 
-can create constraints on a lot of different things...
+`control curve` that Animators will use, and B is our Cube for now. *Though you 
+can create constraints on a lot of different things...*
 
 Essentially you are specifying a relationship between the `Ctrl` and the cube.
 *"Hey Cube... you're doing this because the control is doing this."*
