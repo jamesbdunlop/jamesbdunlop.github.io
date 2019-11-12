@@ -21,4 +21,8 @@ Direct connecting has it's uses *(though it can become problematic with more
 complex rigs and might need some special handling)*, but as far as technical
 execution, it's about as basic as it gets!
 
+Creating a connection between A and B is handled differently in applications
+and you'll want to familiarize yourself with Nodes and the like, but usually
+it's a simple click and drag operation, source to destination kind of thing.
+
 [.. onwards... Constraints](2019-09-13-constraints.md)
