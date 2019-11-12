@@ -10,7 +10,7 @@ category: rigACube
 of points, bodies (objects), and systems of bodies (groups of objects) 
 without considering the forces that cause them to move"* - wikipedia
 
-Forward kinematics is when you have a `chain' of `controls` in a `hierarchy` 
+Forward kinematics is when you have a `chain` of `controls` in a `hierarchy` 
 eg A|B|C|D in that when A is moved B C D follow, when B is moved C and D 
 follow and so down the `chain'. 
 
