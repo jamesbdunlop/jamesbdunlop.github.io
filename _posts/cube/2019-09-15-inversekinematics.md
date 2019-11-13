@@ -42,13 +42,13 @@ Regardless of HOW you're being forced to setup `IK` the concept of `IK` is
 essentially the same, and once you get a "handle" on it you'll be setting
 up `IK` a lot (or using a tool to do it for you).
 
-Maya has a few flavours of `IK solvers`;
+Maya has a few flavours of `IK solvers` and you're going to need to do
+some study to learn what each do etc;
 
 - `SingleChain` solver
 - `RotatePlane` solver 
 - `Spring` solver
 
-Each solver each behaving slightly differently (for you to research and play with.)
 *There is also a splineIK approach that uses a `curve(`spline`) to drive the `joint chain`.*
 
 Here is our Cube (with more `subdivision`s to show the `deformation` clearer)
