@@ -5,7 +5,7 @@ category: rigACube
 ---
 <div class="body">
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts reversed %}
         {% if post.isPost == true and post.category == "rigACube" %}
           <li>
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
