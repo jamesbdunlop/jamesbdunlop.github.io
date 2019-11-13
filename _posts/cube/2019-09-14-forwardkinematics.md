@@ -41,7 +41,7 @@ will behave in a forward [kinematic] `(FK)` way.
 these controls to alter the base shape `deform` the Cube.
 
 Here is a look at that in action, *the control curves driving `joints` that are `skinned` to the
-Cube* to change the shape of the cube.
+Cube* to change the shape of the cube (more on that later).
 
 <img src="http://www.anim83d.com/images/examples/cubeFKDeform.gif" width="538" height="465" alt="fkCubeDeformGif">
 
