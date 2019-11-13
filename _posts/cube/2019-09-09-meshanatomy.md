@@ -53,4 +53,4 @@ each `face` of the 3D model has a `UV` associated to it.
 
 You can use UV co-ordinates in rigging to for sticking things to a mesh, etc...
 
-[.. onwards... 3DSpaces](2019-09-11-3dspaces.md)
+[.. onwards... 3DSpaces](2019-09-10-3dspaces.md)
