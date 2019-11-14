@@ -46,4 +46,7 @@ And so on....
 All of these can help setup a control system for the Rig, controlling systems such as
 `Deformers` / `FK` / `IK` chains etc
 
+When using constraints in rigging, we usually do these on the parent of
+the control so that way nothing interfers with the animators keyframes.
+
 [.. onwards...Forward Kinematics](2019-09-14-forwardkinematics.md)

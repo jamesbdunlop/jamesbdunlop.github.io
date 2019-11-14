@@ -11,7 +11,7 @@ of points, bodies (objects), and systems of bodies (groups of objects)
 without considering the forces that cause them to move"* - wikipedia
 
 Forward kinematics is when you have a `chain` of `controls` *(ctrls in a `hierarchy`)* 
-eg A|B|C|D in that when A is moved B C D follow, when B is moved C and D 
+eg: A|B|C|D in that when A is moved B C D follow, when B is moved C and D 
 follow and so down the `chain'. 
 
 Here are two examples of setting up an `FK chain`. One using parenting to create
