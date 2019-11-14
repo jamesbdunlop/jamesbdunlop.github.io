@@ -12,8 +12,7 @@ hierarkhes, "president of sacred rites") is an arrangement of items
 as being "above", "below", or "at the same level as" one another. 
 Hierarchy is an important concept in a wide variety of fields, such as
 philosophy, mathematics, computer science, organizational theory, 
-systems theory, and the social sciences (especially political philosophy)."*
-- wikepedia
+systems theory, and the social sciences (especially political philosophy)."* - wikepedia
 
 It is also present in 3D applications to help organise / structure your
 3D scenes, and can play an important role in figuring out your 3DSpaces/

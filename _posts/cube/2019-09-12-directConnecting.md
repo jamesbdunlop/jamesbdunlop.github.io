@@ -12,8 +12,8 @@ else in between that connection.
  
 <center>A.v ---> B.v</center>
 
-Here is an example of taking the `translate` attribute from a control curve, and 
-directly connecting it into the cube's `translate` attribute.
+Here is an example of taking the `translate`, `rotate`, `scale` attributes 
+from a control curve, and directly connecting it into the cube's `translate` attribute.
 
 <img src="http://www.anim83d.com/images/examples/cube_directConnect.gif" width="640" height="480" alt="anatomy">
 
