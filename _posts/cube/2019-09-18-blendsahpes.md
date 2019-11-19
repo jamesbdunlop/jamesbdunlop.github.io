@@ -51,4 +51,4 @@ get written to help reduce the pain involved in managing these kinds of workflow
 If you're starting out, it will take some time before you really start needing
 corrective shapes, but it's important to know of the concept.
 
-[.. onwards... blendshapes](2019-09-18-blendsahpes.md)
+[.. onwards... ]()
