@@ -1,21 +1,23 @@
 @import "normalize";
 @import "fonts";
 @import "rouge-base16-dark.scss";
+@import url("https://fonts.googleapis.com/css?family=Madan:900");
+@import url("https://fonts.googleapis.com/css?family=Chivo:900");
 
 body {
   padding:10px 0 20px 0px;
   margin: 0px;
-  font:14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 'Madan', 'Helvetica Neue', Helvetica, Arial, serif;
   color:#f0e7d5;
   font-weight: normal;
-  background: #252525;
+  background: #323232;
   background-attachment: fixed !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color:#e8e8e8;
   margin:0 0 10px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif;
   font-weight: normal;
 }
 
@@ -43,7 +45,7 @@ h4, h5, h6 {
 h3 {
   font-size: 18px;
   line-height: 24px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif !important;
   font-weight: normal;
   color: #b6b6b6;
 }
@@ -70,12 +72,12 @@ ul{
 }
 
 strong {
-  font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
+  font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif !important;
+  font-weight: bold;
 }
 
 .wrapper {
-  width: 50%;
+  width: 60%;
   margin:0 auto;
   padding: 0px 0px;
 }
@@ -127,7 +129,7 @@ th {
   padding:5px 10px;
   border-bottom:1px solid #434343;
   color: #b6b6b6;
-  font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif !important;
   font-weight: normal;
 }
 
@@ -147,134 +149,172 @@ hr {
 
 dt {
   color:#F0E7D5;
-  font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif !important;
   font-weight: normal;
 }
 
 
 #header {
-  z-index: 100;
-  background: url(../images/nav-bg.gif) #353535;
+  z-index: 101;
+  background: #3f3f3f;
   border-bottom: 4px solid #434343;
   box-shadow: 0px 1px 3px rgba(0,0,0,.25);
+  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   float: left;
-  width: 15%;
+  width: 16%;
   height: 100%;
 
+  nav2 {
+        z-index: 101;
+        height: 100%;
+        width: 100%;
+        font-size: 9px;
+        font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif;
+
+        h2 {
+            font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+        }
+
+        li {
+          z-index: 100;
+          text-align: left;
+          list-style: none;
+          color: white;
+          font-weight: italic;
+          font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+          font-size: 12px;
+
+          a {
+            width: 100%;
+            align: left;
+            color: white;
+            text-align:left;
+            font-weight: bold;
+            font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif;
+            background: #0000000;
+            font-size: 5px;
+
+            &:hover {
+              background: linear_gradient(#749619, #527f0e);
+              background-color: #91B7C0;
+              border: 1px solid #91B7C0;
+              box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
+              font-size: 22px;
+            }
+          }
+        }
+  }
+
+
   nav {
-    z-index: 101;
-    height: 100%;
-    width: 100%;
-
-    h2 {
-        font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
-    button {
-      z-index: 102;
-      width: 100%;
-      border: 0px;
-      background: url(../images/nav-bg.gif) #353535;
-      text-align: left;
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      display: inline;
-      color: white;
-      line-height: 24px;
-      text-shadow: 0px 1px 0px rgba(0,0,0,.2);
-      font-size: 10px;
-
-      a {
+        z-index: 101;
+        height: 100%;
         width: 100%;
-        color: white;
-        border: 1px solid #39434C;
-        background: linear_gradient(#93bd20, #659e10);
-        border-radius: 2px;
-        box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
+        line-height: 20px;
 
-        background-color: #4E5A5D;
-        padding: 10px 10px;
-        margin-top: 10px;
-        line-height:14px;
-        font-size:24px;
-        display:inline-block;
-        text-align:center;
-
-        &:hover {
-          background: linear_gradient(#749619, #527f0e);
-          background-color: #91B7C0;
-          border: 1px solid #91B7C0;
-          box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
+        h2 {
+            font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+            line-height: 08px;
         }
-      }
-    }
 
-    li {
-      z-index: 100;
-      text-align: left;
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      list-style: none;
-      display: inline;
-      color: white;
-      line-height: 10px;
-      text-shadow: 0px 1px 0px rgba(0,0,0,.2);
-      font-size: 14px;
+        button {
+          z-index: 102;
+          width: 100%;
+          border: 0px;
+          background: #3f3f3f;
+          text-align: left;
+          display: inline;
+          color: white;
+          text-shadow: 0px 1px 0px rgba(0,0,0,.2);
 
-      a {
-        width: 60%;
-        margin-left: 15%;
-        align: left;
-        color: white;
-        border: 1px solid #1C2E32;
-        background: linear_gradient(#93bd20, #659e10);
-        border-radius: 2px;
-        box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
-        background-color: #4E5A5D;
-        padding: 10px 10px;
-        margin-top: 1px;
-        line-height:14px;
-        font-size:14px;
-        display:inline-block;
-        text-align:center;
+          a {
+            width: 100%;
+            color: white;
+            border: 1px solid #39434C;
+            background: linear_gradient(#93bd20, #659e10);
+            border-radius: 2px;
+            box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
+            background-color: #4E5A5D;
+            margin-top: 10px;
+            font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
+            font-size:25px;
+            display:inline-block;
+            text-align:center;
 
-        &:hover {
-          background: linear_gradient(#749619, #527f0e);
-          background-color: #91B7C0;
-          border: 1px solid #91B7C0;
-          box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
+            &:hover {
+              background: linear_gradient(#749619, #527f0e);
+              background-color: #91B7C0;
+              border: 1px solid #91B7C0;
+              box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
+            }
+          }
         }
-      }
 
-      &.fork {
-        align: left;
-        margin-left: 0px;
-      }
+        li {
+          z-index: 100;
+          text-align: left;
+          font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif;
+          list-style: none;
+          display: inline;
+          color: white;
+          text-shadow: 0px 1px 0px rgba(0,0,0,.2);
 
-      &.downloads {
-        float: right;
-        margin-left: 6px;
-      }
+          a {
+            width: 60%;
+            margin-left: 15%;
+            align: left;
+            color: white;
+            border: 1px solid #1C2E32;
+            background: linear_gradient(#93bd20, #659e10);
+            border-radius: 2px;
+            box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
+            background-color: #4E5A5D;
+            padding: 10px 20px;
+            margin-top: 1px;
+            font-size:14px;
+            display:inline-block;
+            text-align:center;
 
-      &.title {
-        width: 100%;
-        align: left;
-        margin-right: 90%;
-        margin-left: 10%;
-        margin-top: 20px;
-        font-size: 16px;
-        font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: bold;
-      }
+            &:hover {
+              background: linear_gradient(#749619, #527f0e);
+              background-color: #91B7C0;
+              border: 1px solid #91B7C0;
+              box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
+              width: 65%;
+              line-height: 20px;
+              font-weight: bold;
+            }
+          }
 
-    }
+          &.fork {
+            align: left;
+            margin-left: 0px;
+          }
+
+          &.downloads {
+            float: right;
+            margin-left: 6px;
+          }
+
+          &.title {
+            width: 100%;
+            align: left;
+            margin-right: 90%;
+            margin-left: 10%;
+            margin-top: 20px;
+            font-size: 16px;
+            font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif;
+            font-weight: bold;
+          }
+        }
   }
 }
+
 
 section {
   max-width:100%;
   padding: 0px 0px 0px 0px;
-  margin: 20px 0    ;
+  margin: 10px 0;
   margin-top: 0px;
 
   .gist-data, tr, td, th {
@@ -302,23 +342,23 @@ section {
     }
 
   #title {
-    border: 1px solid #91B7C0;
-    background-color: #39434C;
+    border: 1px solid #9D9D9D;
+    background-color: #464646;
     outline: none;
     margin: 0 0 0px 0;
     padding: 15px 0px 10px 0;
 
     h1 {
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
       font-weight: normal;
       font-size: 32px;
       text-align: center;
-      line-height: 20px;
+      line-height: 15px;
     }
 
     p {
       color: #d7cfbe;
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
       font-weight: normal;
       font-size: 18px;
       text-align: center;
@@ -326,7 +366,7 @@ section {
 
     .credits {
       font-size: 8px;
-      font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif;
       font-weight: normal;
       color: #696969;
       margin-top: -10px;
