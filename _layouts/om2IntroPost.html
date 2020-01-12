@@ -24,27 +24,15 @@
     </div>
 
     <div class="wrapper">
-       <div id="title">
-           <center>{{ site.title }}</center>
-       </div>
-         <div id="pageHeader">
-             <div id="codePostDisclaimer">
-                <center><b>Disclaimer:</b><br>
+        <section>
+        <div id="title">
+            <center>{{ page.title }}</center>
+        </div>
+        <hr>
 
-                All code here is provided as is without support.<br>
-                Use at your own risk! These posts assume you have some knowledge of import/running python script in maya
-                </center>
-             </div>
-         </div>
+            {{ content }}
 
-      <section>
-         <br>
-         <h1 align="center">{{ page.title }}</h1>
-         <hr>
-
-        {{ content }}
-
-      </section>
+         </section>
     </div>
 
   </body>

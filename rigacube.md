@@ -1,9 +1,9 @@
 ---
-layout: rigACubePost
+layout: default
 title: "Rig A Cube"
-category: rigACube
 ---
 <div class="body">
+<br>
   <ul class="post-list">
     {% for post in site.posts reversed %}
         {% if post.isPost == true and post.category == "rigACube" %}

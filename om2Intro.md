@@ -1,9 +1,9 @@
 ---
-layout: om2IntroPost
+layout: default
 title: "OpenMaya2(om2) Intro"
-category: om2Intro
 ---
 <div class="body">
+<br>
   <ul class="post-list">
     {% for post in site.posts reversed %}
         {% if post.isPost == true and post.category == "om2Intro" %}
