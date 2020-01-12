@@ -3,11 +3,14 @@ layout: summaryPage
 title: "JamesDunlop-Homepage"
 info: info.md
 ---
+<div id="title">
+    <h1>{{ site.title }}</h1>
+</div>
+<br>
 <div class="body">
   {% for post in site.about %}
     {{ post.content }}
   {% endfor %}
-
   <center><h2>Recent Posts</h2></center>
   <ul class="post-list">
     {% for post in site.posts %}
