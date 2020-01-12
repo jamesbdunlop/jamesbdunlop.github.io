@@ -200,10 +200,11 @@ dt {
   max-width: 250px;
   float: left;
 
- #recentPosts {
+ .recentPosts {
         z-index: 101;
         height: 100%;
         width: 100%;
+        color: white;
         font-size: 9px;
         font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif;
 
