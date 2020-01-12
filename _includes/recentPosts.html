@@ -3,18 +3,20 @@
 .tab { margin-left: 20px; }
 -->
 </style>
-<nav2>
-<br><br><br>
-<h2>Recent Posts:</h2>
-<ul class="post-list">
-  {% for post in site.posts %}
-  {% if post.isPost == true %}
-    <li>
-      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-      {{ post.date | date: date_format }}:
-      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-    </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-</nav2>
+
+<div class="recentPosts">
+  <br><br><br>
+    <h2>Recent Posts:</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+      {% if post.isPost == true %}
+        <li>
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          {{ post.date | date: date_format }}:
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </li>
+      {% endif %}
+      {% endfor %}
+  </ul>
+</div>
+

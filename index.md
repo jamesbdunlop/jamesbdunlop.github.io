@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: summaryPage
 title: "JamesDunlop-Homepage"
 info: info.md
 ---

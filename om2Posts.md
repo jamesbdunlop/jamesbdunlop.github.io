@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: summaryPage
 title: "OM2 Posts"
 ---
 <div class="body">
