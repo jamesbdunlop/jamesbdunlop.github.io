@@ -3,9 +3,9 @@ layout: codePost
 title: "skinTo as om2 plugin"
 isPost: true
 description: "Converted the script into a MPxCommand"
-usage: "<br>Step1: Save gist to valid plug-ins folder as jbd.py  \
-<br>Step2: In the script editor load the cmd cmds.loadPlugin('pathTo/plugin.py') \
-<br>Step3: Select some geo and run cmds.resetSkinClusters()"
+usage: "Step1: Save gist to valid plug-ins folder as jbd.py
+        <p>Step2: In the script editor load the cmd cmds.loadPlugin('pathTo/plugin.py')</p>
+        <p>Step3: Select some geo and run cmds.resetSkinClusters()</p>"
 lastUpdated: "04-10-2018"
 category: om2
 ---

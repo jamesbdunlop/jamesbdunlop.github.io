@@ -93,10 +93,8 @@ code {
   background: #272727;
   color:#efefef;
   font-size:13px;
-  margin: 0 4px;
   padding: 4px 6px;
   border-radius: 2px;
-  margin:0 0 200px;
 }
 
 pre {
@@ -153,8 +151,6 @@ dt {
 }
 
 
-
-
 .wrapper {
   margin-right: auto;
   margin-left:  250px;
@@ -168,30 +164,38 @@ dt {
         font-size: 22px;
         width: 100%;
   }
+
   h1 {
     font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
     font-size: 25px;
     font-weight: normal;
     align: center;
   }
+
   #pageHeader{
-      color: grey;
-      background: #454540;
+      color: white;
+      background: #323A45;
       border:1px solid #121212;
       font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
       font-size: 12px;
-        #indent{
-            text-indent: 5em;
-        }
-        #codePostDisclaimer{
-            background: #454530;
-            border:1px solid #121212;
-            font-family: 'Monaco', 'Helvetica Neue', Helvetica, Arial, serif;
-            font-size: 11px;
-            font-weight: italic;
-            align: left;
-        }
-  }
+      font-weight: bold;
+      #indent{
+          font-family: 'Madan', 'Helvetica Neue', Helvetica, Arial, serif;
+          font-size: 14px;
+          font-weight: italic;
+          text-indent: 8em;
+          background: #323A40;
+      }
+    }
+
+    #codePostDisclaimer{
+        align: center;
+        background: #323A45;
+        font-family: 'Monaco', 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: 11px;
+        font-weight: italic;
+        align: left;
+    }
 }
 
 #sideBar {
@@ -357,7 +361,7 @@ dt {
 
 
 section {
-  max-width:100%;
+  max-width: 2500px;
   padding: 0px 0px 0px 0px;
   margin: 55px 0;
   margin-top: 0px;

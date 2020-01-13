@@ -29,21 +29,21 @@
             <h1>{{ page.title }}</h1>
         </div>
         <br>
+         <div id="codePostDisclaimer">
+            <b>Disclaimer:</b><br>
+
+            All code here is provided as is without support.<br>
+            Use at your own risk! These posts assume you have some knowledge of import/running python script in maya
+         </div>
          <div id="pageHeader">
              <b>INFO:</b>           <div id="indent">{{ page.description }}</div>
              <b>USAGE:</b>          <div id="indent">{{ page.usage }}</div>
              <b>LAST UPDATED:</b>   <div id="indent"> {{ page.lastUpdated }}</div>
-             <div id="codePostDisclaimer">
-                <center><b>Disclaimer:</b><br>
-
-                All code here is provided as is without support.<br>
-                Use at your own risk! These posts assume you have some knowledge of import/running python script in maya
-                </center>
-             </div>
          </div>
 
+          <hr>
 
-        {{ content }}
+         {{ content }}
 
       </section>
     </div>
