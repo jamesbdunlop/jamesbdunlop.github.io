@@ -17,10 +17,11 @@ Simple division 1 cube ( a cube that has no subdivisions )
 Why is this important? What has this got to do with rigging?
 ------------------------------------------------------------
 
-Every rig has to move those Verts / Edges / Faces (`components`) by some means (connections, 
-constraints, deformers etc), so it is important you know about them. 
+Every rig has to move those Verts / Edges / Faces (`components`) by some means (`connections,
+constraints, deformers` etc), so it is important you know about them.
 
-*Note: If you can do learn some modelling all the better.*
+*Note: If you can; DO learn some modelling! All the better! It will help you  
+know what to ask for*
 
 These `components` of a 3D model are considered the guts of what makes up the 
  the `shape` of a 3D model.
