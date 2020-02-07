@@ -7,6 +7,22 @@ isPost: true
 <h2>Just a bunch of random work at home :) Most SketchFab meshes have been decimated!</h2>
 
 <div class="sketchfab-embed-wrapper"><iframe width="960" height="480"
+src="https://sketchfab.com/models/5294cb7412e249268841f17a7fd244f5/embed?
+autospin=0.4"
+frameborder="0"
+allow="autoplay;
+fullscreen; vr"
+mozallowfullscreen="true"
+webkitallowfullscreen="true"></iframe>
+<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/3d-models/minion-5294cb7412e249268841f17a7fd244f5?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Minion</a>
+    by <a href="https://sketchfab.com/jamesbdunlop?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jamesbdunlop</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p>
+</div>
+<br><br><br><br>
+
+<div class="sketchfab-embed-wrapper"><iframe width="960" height="480"
 src="https://sketchfab.com/models/8a3f11fada624c259c348149e62cecd7/embed?
 autospin=0.4"
 frameborder="0"
