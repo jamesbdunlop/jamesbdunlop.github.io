@@ -6,7 +6,7 @@ description: "Messing with Trig to create pivot offsets"
 usage: "Please see the commented code at the bottom for usage"
 lastUpdated: "29-02-2020"
 category: generalMaya
----------------------
+---
 
 So I decided to have a bit of fun in my spare time messing with some trig and test some stuff.
 
