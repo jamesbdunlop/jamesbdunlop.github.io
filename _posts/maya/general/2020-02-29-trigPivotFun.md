@@ -14,4 +14,9 @@ So I decided to have a bit of fun in my spare time messing with some trig and te
 
 <center><img src="http://anim83d.com/images/examples/rollingCube.gif" alt="trigFun2" width="1179" height="666"></center>
 
+
+Some shitty networking here due to lack of nodes, prob should put Serg's nodes into play. But w/e! :)
+
+Essentially the mult's with the greater and less than nodes are just weighting the direction choices.
+
 <center><img src="http://anim83d.com/images/examples/trigPivNetwork.png" alt="trigFun3" width="1560" height="621"></center>
