@@ -6,6 +6,10 @@ isPost: true
 <center>
 <h2>Just a bunch of random work at home :) Most SketchFab meshes have been decimated!</h2>
 
+Retexturing the gremlin pre rigging it.
+<br><img src= "http://anim83d.com/images/personal/gremlin_newTextures.png" alt="RockFace"><br>
+
+
 <div class="sketchfab-embed-wrapper"><iframe width="960" height="480"
 src="https://sketchfab.com/models/5294cb7412e249268841f17a7fd244f5/embed?
 autospin=0.4"
