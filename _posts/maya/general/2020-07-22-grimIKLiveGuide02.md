@@ -19,7 +19,18 @@ Since the grimIK caters for characters lets stick to using character terms here;
 - Mirroring considerations.
 
 
-Here we're going to focus on how to do the knee position by adding a knee guide and working out how that relates to the
+We're now going to focus on how to do the knee position by adding a knee guide and working out how that relates to the
 2 limb lengths via some simple vector math.
 
-WIP still to do :) coming soon...
+The two distances we're interested in here are the hip to knee, and knee to ankle.
+
+So we can whip up a quick bifrost network to figure this out for us.
+
+<center><img src="http://anim83d.com/images/examples/bf_lenVec.png" alt="baseNodes" width="1048" height="310"></center>
+
+And noodle that into the graph like so;
+
+<center><img src="http://anim83d.com/images/examples/bf_lenVecNoodled.png" alt="baseNodes" width="973" height="609"></center>
+
+
+k going to leave this here for now, as I'm a bit swamped with work :(
