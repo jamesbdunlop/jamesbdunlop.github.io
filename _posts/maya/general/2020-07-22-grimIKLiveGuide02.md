@@ -34,3 +34,5 @@ And noodle that into the graph like so;
 
 
 k going to leave this here for now, as I'm a bit swamped with work :(
+
+<center><img src="http://anim83d.com/images/examples/liveGuide.gif" alt="baseNodes" width="800" height="600"></center>
