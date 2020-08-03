@@ -66,14 +66,10 @@ guide deletion accordingly!***
 <center><img src="http://anim83d.com/images/examples/grimBase_hookedFKORP2.png" alt="baseNodes" width="802" height="673"></center>
 
 *Note: Notice how the grimIK node aligns downX for the hip and knee? This is one of the handy things about setting up the guide
- like this. The FK ctrls will adpot this alignment automatically. Also of note the ankle output in IK is aligned to world. 
-I personally don't like what this does to the FK controls the side effect being that animation can't grab all three controls 
-in FK and rotate them down the line to flick the leg.* 
+ like this. The FK ctrls will adopt this alignment automatically. Turn off Orient Tip Blend if you want the ankle to maintain  the same aligment as
+ hip and knee* 
 
 <center><img src="http://anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="baseNodes" width="382" height="967"></center>
-
-***If you try to do a premult on this to  align your leg you'll get a shift in the FKIK blending too so be warned there, for 
-now you can rotated the CV's. (or update the node in house). I've chosen to rotate the cv's for the purposes of this demo.***
 
 And that's about it.
 
