@@ -15,7 +15,7 @@ so it's easy to spot stray undesired weights.
 Super straight forward. Just color moved verts based on a tolerance.
 We've found this kind of thing pretty helpful on previous gigs.
 
-BiFrost network here: <a href="http://anim83d.com/maya/blendshapes_QC.rar">blendshapes_QC.rar</a>
+BiFrost network here: <a href="http://www.anim83d.com/maya/blendshapes_QC.rar">blendshapes_QC.rar</a>
 
 <center><img src="http://anim83d.com/images/examples/bifrost_blendshapeMovedVerts.gif" alt="biFrost_rivet"></center>
 
