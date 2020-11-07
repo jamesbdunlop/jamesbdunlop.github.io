@@ -11,6 +11,22 @@ isPost: false
 <table style="width:100%">
 
 <tr><th>
+<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="" alt="" border="0" /></p>
+</th><td>
+<h2>In Prog: Undisclosed Project</h2>
+<h3>Roles Performed</h3>
+<h4>Rigging Lead</h4>
+</td></tr>
+
+<tr><th>
+<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="" alt="" border="0" /></p>
+</th><td>
+<h2>DC Pets</h2>
+<h3>Roles Performed</h3>
+<h4>Senior Rigger</h4>
+</td></tr>
+
+<tr><th>
 <p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/peterrabbit2.png" alt="" border="0" /></p>
 </th><td>
 <h2>Peter Rabbit2</h2>
