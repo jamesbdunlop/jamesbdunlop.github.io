@@ -70,7 +70,9 @@ guide deletion accordingly!***
  hip and knee* 
 
 <center><img src="http://anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="baseNodes" width="382" height="967"></center>
-<center><img src="http://anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="baseNodes" width="382" height="967" class="inline"></center>
+
+
+<img src="http://anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="baseNodes" width="382" height="967" class="inline">
 
 And that's about it.
 
