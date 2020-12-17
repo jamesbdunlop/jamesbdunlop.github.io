@@ -72,7 +72,7 @@ guide deletion accordingly!***
 <center><img src="http://anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="baseNodes" width="382" height="967"></center>
 
 
-<img src="http://anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="baseNodes" width="382" height="967" class="inline">
+<img src="http://www.anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="baseNodes" width="382" height="967" class="inline">
 
 And that's about it.
 
