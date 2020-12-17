@@ -72,12 +72,26 @@ guide deletion accordingly!***
 <center><img src="http://anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="baseNodes" width="382" height="967"></center>
 
 
-(http://www.anim83d.com/images/examples/grimBase_hookedFKORP3.png)
-
 And that's about it.
 
 You have a global root guide to move the rig. Position the foot and pole. So now we can start layering in some more complexity.
 
 [.. onwards... Knee](2020-07-22-grimIKLiveGuide02.md)
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="http://www.anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="HTML5 Icon" width="128" height="128">
+
+
+</body>
+</html>
 
