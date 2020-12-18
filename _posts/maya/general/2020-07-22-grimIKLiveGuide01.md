@@ -46,7 +46,7 @@ to begin with.
 Now we hook up the guide to the offsetParentMatrix of the rig controls, and position the guides as expected.
 
 *Note: when we delete the guide these connections will be severed automagically.*<br>
-*Note2: If maya has an issue that you delete and it drops the current value, you may need to script the delete to remove connections first,
+*Note2: If maya has an issue that you delete and it drops the current value, you may need to script up the deletion to remove connections first,
 keeping the current value, and then remove the guide elements.*
 
 <center><img src="http://anim83d.com/images/examples/grimBase_guideCtrlsHookedToORP.png" alt="baseNodes" width="1289" height="663"></center>
@@ -66,13 +66,10 @@ guide deletion accordingly!***
 <center><img src="http://anim83d.com/images/examples/grimBase_hookedFKORP2.png" alt="baseNodes" width="802" height="673"></center>
 
 *Note: Notice how the grimIK node aligns downX for the hip and knee? This is one of the handy things about setting up the guide
- like this. The FK ctrls will adopt this alignment automatically. Turn off Orient Tip Blend if you want the ankle to maintain  the same aligment as
+ like this. The FK ctrls will adopt this alignment automatically. Turn off Orient Tip Blend if you want the ankle to maintain  the same alignment as
  hip and knee* 
 
 <center><img src="http://anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="baseNodes" width="382" height="967"></center>
-
-<center><img src="anim83d.com/images/examples/grimBase_hookedFKORP3.png" alt="fart" width="382" height="967"></center>
-
 
 And that's about it.
 
