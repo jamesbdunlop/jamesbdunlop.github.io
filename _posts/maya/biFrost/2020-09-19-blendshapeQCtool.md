@@ -17,6 +17,6 @@ We've found this kind of thing pretty helpful on previous gigs.
 
 BiFrost network here: <a href="http://www.anim83d.com/maya/blendshapes_QC.rar">blendshapes_QC.rar</a>
 
-<center><img src="http://anim83d.com/images/examples/bifrost_blendshapeMovedVerts.gif" alt="biFrost_rivet"></center>
+<center><img src="http://anim83d.com/images/examples/bifrost_blendshapeMovedVerts.gif" alt="biFrost_rivet" width="511" height="251"></center>
 
 Script up something to make all the connections for you and way we go!
