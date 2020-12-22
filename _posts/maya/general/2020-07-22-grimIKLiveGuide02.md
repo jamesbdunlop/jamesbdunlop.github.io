@@ -42,7 +42,7 @@ that data.
 
 eg:
 
-<center><img src="/assets/examples/kneePolevVecFromPoints.gif" alt="kneePolevVecFromPoints.gif" width="393" height="516"></center>
+<center><img src="/assets/examples/kneePoleVecFromPoints.gif" alt="kneePoleVecFromPoints" width="393" height="516"></center>
 
 
 [back...](2020-07-22-grimIKLiveGuide01.md)
