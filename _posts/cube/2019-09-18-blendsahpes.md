@@ -23,7 +23,7 @@ to create an intuitive ctrl system to drive the blending.
 Here is a look at a blendshape created for the cube, with 2 shapes it can
 blend to.
 
-<img src="http://www.anim83d.com/images/examples/cube_blendshape.gif" width="640" height="480" alt="cubeSkin">
+<img src="/assets/examples/cube_blendshape.gif" width="640" height="480" alt="cubeSkin">
 
 *Side Note: Each cube used as a different shape share the same structure
 as the shape we want to deform. If we don't do this the computer won't know 

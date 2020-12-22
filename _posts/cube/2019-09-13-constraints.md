@@ -41,7 +41,7 @@ Object CHOP, or by hscript and python expressions.
 
 And so on....
 
-<img src="http://www.anim83d.com/images/examples/cube_constraint01.gif" width="640" height="480" alt="constraint">
+<img src="/assets/examples/cube_constraint01.gif" width="640" height="480" alt="constraint">
 
 All of these can help setup a control system for the Rig, controlling systems such as
 `Deformers` / `FK` / `IK` chains etc

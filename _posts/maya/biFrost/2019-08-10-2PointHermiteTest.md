@@ -13,7 +13,7 @@ This is positions only cause ... well fuck rotation :P
 
 *I may add it later but just exploring atm.*
 
-<center><img src="http://anim83d.com/images/examples/biFrost_2pointHermiteCrvPos.gif" alt="biFrost_aim"></center>
+<center><img src="/assets/examples/biFrost_2pointHermiteCrvPos.gif" alt="biFrost_aim"></center>
 
 9mg Gif sorry :P 
 

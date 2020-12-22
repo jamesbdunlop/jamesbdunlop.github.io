@@ -22,17 +22,17 @@ any type of `control Curve` / `transform`  etc..
 
 example01:
 
-<img src="http://www.anim83d.com/images/examples/ABCD_hrc.png" width="147" height="90" alt="abcdHrc">
+<img src="/assets/examples/ABCD_hrc.png" width="147" height="90" alt="abcdHrc">
 
-<img src="http://www.anim83d.com/images/examples/fkHrc.gif" width="538" height="465" alt="abcdHRCGif">
+<img src="/assets/examples/fkHrc.gif" width="538" height="465" alt="abcdHRCGif">
 
 <hr>
 
 example02:
 
-<img src="http://www.anim83d.com/images/examples/ABCD_cst.png" width="181" height="202" alt="abcdCST">
+<img src="/assets/examples/ABCD_cst.png" width="181" height="202" alt="abcdCST">
 
-<img src="http://www.anim83d.com/images/examples/fkCST.gif" width="538" height="465" alt="abcdCSTGif">
+<img src="/assets/examples/fkCST.gif" width="538" height="465" alt="abcdCSTGif">
 
 As you can see both of these examples will result in a `control rig` that 
 will behave in a forward [kinematic] `(FK)` way.
@@ -43,7 +43,7 @@ these controls to alter the base shape `deform` the Cube.
 Here is a look at that in action, *the control curves driving `joints` that are `skinned` to the
 Cube* to change the shape of the cube (more on that later).
 
-<img src="http://www.anim83d.com/images/examples/cubeFKDeform.gif" width="538" height="465" alt="fkCubeDeformGif">
+<img src="/assets/examples/cubeFKDeform.gif" width="538" height="465" alt="fkCubeDeformGif">
 
 Another kinematic we use a lot is `Inverse Kinematics (IK)`.
 

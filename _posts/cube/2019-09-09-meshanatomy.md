@@ -8,7 +8,7 @@ category: rigACube
 
 Simple division 1 cube ( a cube that has no subdivisions )
 
-<img src="http://www.anim83d.com/images/examples/cube_anatomy.gif" width="640" height="480" alt="anatomy">
+<img src="/assets/examples/cube_anatomy.gif" width="640" height="480" alt="anatomy">
 
 - 8 Vertexes
 - 12 Edges
@@ -47,7 +47,7 @@ the faces of the model but they can be leveraged for other things rig related to
 
 Here is the default UV for the cube.
 
-<img src="http://www.anim83d.com/images/examples/cube_uv.png" width="575" height="573" alt="uv">
+<img src="/assets/examples/cube_uv.png" width="575" height="573" alt="uv">
 
 Interesting how the gif `unfolds` the cube to the same shape. This is because
 each `face` of the 3D model has a `UV` associated to it. 

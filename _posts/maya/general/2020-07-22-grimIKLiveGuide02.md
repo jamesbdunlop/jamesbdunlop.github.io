@@ -26,11 +26,11 @@ The two distances we're interested in here are the hip to knee, and knee to ankl
 
 So we can whip up a quick bifrost network to figure this out for us.
 
-<center><img src="http://anim83d.com/images/examples/bf_lenVec.png" alt="baseNodes" width="1048" height="310"></center>
+<center><img src="/assets/examples/bf_lenVec.png" alt="baseNodes" width="1048" height="310"></center>
 
 And noodle that into the graph like so;
 
-<center><img src="http://anim83d.com/images/examples/bf_lenVecNoodled.png" alt="baseNodes" width="973" height="609"></center>
+<center><img src="/assets/examples/bf_lenVecNoodled.png" alt="baseNodes" width="973" height="609"></center>
 
 
-<center><img src="http://anim83d.com/images/examples/liveGuide.gif" alt="baseNodes" width="800" height="600"></center>
+<center><img src="/assets/examples/liveGuide.gif" alt="baseNodes" width="800" height="600"></center>

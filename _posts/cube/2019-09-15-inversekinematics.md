@@ -30,7 +30,7 @@ to the point in space that you're moving around.
 
 Here's a look at that in Maya.
 
-<img src="http://www.anim83d.com/images/examples/ikDemo.gif" width="538" height="465" alt="ikDemoGif">
+<img src="/assets/examples/ikDemo.gif" width="538" height="465" alt="ikDemoGif">
 
 There are a few ways to approach this. But for now what you see above is
 a `joint chain` that has an `IK solver` attached to it*(because Maya's native
@@ -55,6 +55,6 @@ Here is our Cube (with more `subdivision`s to show the `deformation` clearer)
 being driven by a `rotatePlane IK Solver` in Maya (which makes it act more 
 like a shoulder `joint` at the base, with an elbow break 1/2 way down).
 
-<img src="http://www.anim83d.com/images/examples/ikCube.gif" width="538" height="465" alt="cubeIKGif">
+<img src="/assets/examples/ikCube.gif" width="538" height="465" alt="cubeIKGif">
 
 [.. onwards... deformers](2019-09-16-deformers.md)

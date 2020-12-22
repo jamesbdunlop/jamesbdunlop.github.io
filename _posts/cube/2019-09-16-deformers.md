@@ -55,7 +55,7 @@ It's a pretty unforgiving area.
 
 eg: The `deformation` below looks great huh... btzzz.....
 
-<img src="http://www.anim83d.com/images/examples/badDeform.png" width="506" height="459" alt="badDeform">
+<img src="/assets/examples/badDeform.png" width="506" height="459" alt="badDeform">
 
 It's really important you get to understand as many `deformers` as possible and 
 how to work with these to get all kinds of great results. 
