@@ -289,6 +289,8 @@ DEPENDENCIES
   jekyll-theme-midnight
   jekyll-theme-modernist
   jekyll-theme-tactile
+  rack (>= 1.5.2)
+  rack-protection (>= 1.5.5)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
