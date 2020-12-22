@@ -20,7 +20,7 @@ creating setups in your rigs.
 
 Here is a look at a hierarchy in a 3d App;
 
-<img src="http://www.anim83d.com/images/examples/hierarchy.png" width="138" height="148" alt="hierarchy">
+<img src="http://www.anim83d.com/images/examples/hierarchy.png" alt="hierarchy.png" width="138" height="148">
 
 Besides organising your scene, it also defines a parent/child relationship.
 

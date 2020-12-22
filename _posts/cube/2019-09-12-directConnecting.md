@@ -16,7 +16,7 @@ Here is an example of taking the `translate`, `rotate`, `scale` attributes
 from a control curve, and directly connecting them into the cube's `translate` 
 attribute.
 
-<img src="http://www.anim83d.com/images/examples/cube_directConnect.gif" width="640" height="480" alt="anatomy">
+<img src="http://www.anim83d.com/images/examples/cube_directConnect.gif" width="640" height="480" alt="cube_directConnect.gif right click open in tab">
 
 Direct connecting has it's uses *(though it can become problematic with more
 complex rigs and might need some special handling)*, but as far as technical
