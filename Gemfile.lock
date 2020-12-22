@@ -289,7 +289,6 @@ DEPENDENCIES
   jekyll-theme-midnight
   jekyll-theme-modernist
   jekyll-theme-tactile
-  minima (~> 2.0)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
