@@ -63,5 +63,5 @@ from a guide grimNode set to IK outputting the final results for those (possible
 
 [back...](2020-07-22-grimIKLiveGuide01.md)
 
-[next...](202012-23-grimIKLiveGuide03.md)
+[next...](2020-12-23-grimIKLiveGuide03.md)
 
