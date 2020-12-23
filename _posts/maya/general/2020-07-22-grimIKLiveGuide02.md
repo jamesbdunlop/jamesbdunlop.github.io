@@ -4,7 +4,7 @@ title: "GimIK Live Guide - 02 The knee"
 isPost: true
 description: "Messing with a live guide on the grimIK"
 usage: ""
-lastUpdated: "29-02-2020"
+lastUpdated: "23-12-2020"
 category: generalMaya
 ---
 
@@ -44,5 +44,20 @@ eg:
 
 <center><img src="/assets/examples/kneePoleVecFromPoints.gif" alt="kneePoleVecFromPoints" width="393" height="516"></center>
 
+and if you dont' like the pivot from the center which swings that pole around a bit, you can make it travel with the knee.ty
+
+<center><img src="/assets/examples/kneePoleVecFromPointsTravelling.gif" alt="kneePoleVecFromPoints" width="393" height="516"></center>
+
+And this is what it looks like in the nodeEditor:
+
+<center><img src="/assets/examples/autoCalcPV_nodeEditorNetwork.png" alt="autoCalcPV_nodeEditorNetwork.png" width="875" height="772"></center>
+
+And a look at the setup without all the debug/demostration geo:
+
+<center><img src="/assets/examples/kneePoleVecFromPointsTravelling2.gif" alt="kneePoleVecFromPoints" width="393" height="516"></center>
+
+This way we can keep anim requests for hip / ik foot ctrls to be world aligned too. And the alignments for the FK ctrls can come
+from a guide grimNode set to IK outputting the final results for those (possible more to come on that time permitting)
 
 [back...](2020-07-22-grimIKLiveGuide01.md)
+
