@@ -54,7 +54,7 @@ And this is what it looks like in the nodeEditor:
 
 And a look at the setup without all the debug/demostration geo:
 
-<center><img src="/assets/examples/kneePoleVecFromPointsTravelling2.gif" alt="kneePoleVecFromPoints" width="393" height="516"></center>
+<center><img src="/assets/examples/kneePoleVecFromPointsTravelling2.gif" alt="kneePoleVecFromPoints" width="709" height="556"></center>
 
 This way we can keep anim requests for hip / ik foot ctrls to be world aligned too. And the alignments for the FK ctrls can come
 from a guide grimNode set to IK outputting the final results for those (possible more to come on that time permitting)
