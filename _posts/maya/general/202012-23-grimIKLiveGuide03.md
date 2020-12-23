@@ -1,6 +1,6 @@
 ---
 layout: codePost
-title: "GimIK Live Guide - 02 The knee Pt2"
+title: "GimIK Live Guide - 03 The knee Pt2"
 isPost: true
 description: "Messing with a live guide on the grimIK"
 usage: ""
@@ -21,5 +21,4 @@ a worldSpace alignment.
 
 [back...](2020-07-22-grimIKLiveGuide02.md)
 
-[next...](2020-07-22-grimIKLiveGuide04.md)
 
