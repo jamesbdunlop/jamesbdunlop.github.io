@@ -75,4 +75,4 @@ And that's about it.
 
 You have a global root guide to move the rig. Position the foot and pole. So now we can start layering in some more complexity.
 
-[.. onwards... Knee](2020-07-22-grimIKLiveGuide02.md)
+[next...](2020-07-22-grimIKLiveGuide02.md)

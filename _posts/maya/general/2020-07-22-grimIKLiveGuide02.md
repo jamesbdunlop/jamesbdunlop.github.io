@@ -8,6 +8,8 @@ lastUpdated: "23-12-2020"
 category: generalMaya
 ---
 
+[back...](2020-07-22-grimIKLiveGuide01.md)
+
 So sure, it's all well and good to hook just the FK to follow the guide and consider it a live guide. But we have a bunch
 of other things we can consider for the fit to make life easier for someone else coming in to fit the rig to an asset.
 
@@ -60,4 +62,6 @@ This way we can keep anim requests for hip / ik foot ctrls to be world aligned t
 from a guide grimNode set to IK outputting the final results for those (possible more to come on that time permitting)
 
 [back...](2020-07-22-grimIKLiveGuide01.md)
+
+[next...](2020-07-22-grimIKLiveGuide03.md)
 
