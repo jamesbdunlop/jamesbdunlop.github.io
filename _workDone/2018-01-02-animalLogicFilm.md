@@ -11,7 +11,7 @@ isPost: false
 <table style="width:100%">
 
 <tr><th>
-<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="" alt="/assets/workdone/MElephant.png" border="0" /></p>
+<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/MElephant.png" alt="MElephant.png" border="0" /></p>
 </th><td>
 <h2>In Prog: Magicians Elephant</h2>
 <h3>Roles Performed</h3>
@@ -19,7 +19,7 @@ isPost: false
 </td></tr>
 
 <tr><th>
-<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/dcPets.png" alt="" border="0" /></p>
+<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/dcPets.png" alt="dcPets.png" border="0" /></p>
 </th><td>
 <h2>DC Pets</h2>
 <h3>Roles Performed</h3>
@@ -27,7 +27,7 @@ isPost: false
 </td></tr>
 
 <tr><th>
-<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/peterrabbit2.png" alt="" border="0" /></p>
+<p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/peterrabbit2.png" alt="peterrabbit2.png" border="0" /></p>
 </th><td>
 <h2>Peter Rabbit2</h2>
 <h3>Roles Performed</h3>
