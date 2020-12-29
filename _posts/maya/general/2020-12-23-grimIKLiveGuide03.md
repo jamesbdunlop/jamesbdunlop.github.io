@@ -22,7 +22,7 @@ a worldSpace alignment.
 
 bi-frost node:
 
-<a href="http://www.anim83d.com/maya/calcPoleVecPosition.rar">autoCalcBifrost</a>
+<a href="http://www.anim83d.com/maya/calcPoleVecPosition.rar">autoCalc PoleVec BifrostGraph</a>
 
 [back...](2020-07-22-grimIKLiveGuide02.md)
 
