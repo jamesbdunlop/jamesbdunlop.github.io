@@ -17,7 +17,12 @@ And this seems to work nicely, we can hide the knee guide now if we want or leav
 We can also unparent the knee/foot from the root now if we wanted as well anticipating this being left in 
 a worldSpace alignment.
 
-<center><img src="/assets/examples/3PointIntoLiveGuide.gif" alt="/3PointIntoLiveGuide.gif" width="811" height="549"></center>
+<center><img src="/assets/examples/3PointIntoLiveGuide.gif" alt="3PointIntoLiveGuide.gif" width="811" height="549"></center>
+
+
+bi-frost node:
+
+<a href="http://www.anim83d.com/maya/calcPoleVecPosition.rar">autoCalcBifrost</a>
 
 [back...](2020-07-22-grimIKLiveGuide02.md)
 
