@@ -26,7 +26,7 @@ gem 'jekyll-relative-links'
 # If you have any plugins, put them here!
 gem "rack-protection", ">= 1.5.5"
 gem "rack", ">= 1.5.2"
-gem "nokogiri", ">= 1.11.0.rc4"
+gem "nokogiri", ">=1.6.7.2"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-compose"
