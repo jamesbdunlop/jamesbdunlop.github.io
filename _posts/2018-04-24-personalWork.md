@@ -6,6 +6,8 @@ isPost: true
 <center>
 <h2>Just a bunch of random work at home :) Most SketchFab meshes have been decimated!</h2>
 
+<br><img src= "/assets/personal/pistolFin.gif" alt="pistolFin.gif"><br>
+
 <br><img src= "/assets/personal/pistolBaseTT.gif" alt="pistolBaseTT.gif"><br>
 
 <br><img src= "/assets/personal/seasHorse.png" alt="seaHorse"><br>
