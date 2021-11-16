@@ -20,4 +20,4 @@ Uses the worldMatrix[0] as an input directly.
 And with a cleanup so default origins are IDMatrices, and a little connection script for selected, also showing
 making the vec local to it's parent by plugging that into the originMtx.
 
-<center><img src="/assets/examples/bifrost_drawVec.gif" alt="biFrost_drawVector2"></center>
+<center><img src="/assets/examples/bifrost_drawVec2.gif" alt="biFrost_drawVector2"></center>
