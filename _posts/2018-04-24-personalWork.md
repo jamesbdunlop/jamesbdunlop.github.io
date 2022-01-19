@@ -6,6 +6,12 @@ isPost: true
 <center>
 <h2>Just a bunch of random work at home :) Most SketchFab meshes have been decimated!</h2>
 
+Decided to make a Destiny2 ghost cause I've been playing a bit recently :P
+
+<br><img src= "/assets/personal/ghost_turntable.gif" alt="ghost_turntable.gif"><br>
+
+Random broomstick :P
+
 <br><img src= "/assets/personal/broomstickBlocking04.gif" alt="broomstickBlocking04.gif"><br>
 
 <br><img src= "/assets/personal/pistolFin.gif" alt="pistolFin.gif"><br>
