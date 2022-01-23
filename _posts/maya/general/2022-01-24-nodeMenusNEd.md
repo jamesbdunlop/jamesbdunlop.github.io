@@ -5,7 +5,7 @@ isPost: true
 description: "Adding a custom menus to a node in the node editor"
 usage: "NA"
 lastUpdated: "01-24-2022"
-category: om2
+category: generalMaya
 ---
 
 So a few years after playing with this, and a couple of movies later, I decided to do a bit of a cleanup of this tool, 
