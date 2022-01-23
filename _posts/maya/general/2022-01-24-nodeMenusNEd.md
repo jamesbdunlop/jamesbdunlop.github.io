@@ -1,6 +1,6 @@
 ---
 layout: codePost
-title: "Node Editor Custom Node Menu Tool"
+title: "Node Editor Menu Manager Tool"
 isPost: true
 description: "Adding a custom menus to a node in the node editor"
 usage: "NA"
@@ -11,8 +11,8 @@ category: generalMaya
 So a few years after playing with this, and a couple of movies later, I decided to do a bit of a cleanup of this tool, 
 and have released an alpha for people to play with here.
 
-https://github.com/jamesbdunlop/maya_nodeEditorMenuManager/releases
+<a href="https://github.com/jamesbdunlop/maya_nodeEditorMenuManager/releases">Releases</a>
 
-readme:
+<a href="https://github.com/jamesbdunlop/maya_nodeEditorMenuManager">Readme</a>
 
-https://github.com/jamesbdunlop/maya_nodeEditorMenuManager
+
