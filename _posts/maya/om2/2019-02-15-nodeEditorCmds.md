@@ -4,9 +4,13 @@ title: "om2-NodeEditorMenuManger"
 isPost: true
 description: "Used to mange nodeEditor right click menus"
 usage: "Please see the commented code at the bottom for usage"
-lastUpdated: "02-19-2019  - More than 1 subMenu"
+lastUpdated: "01-24-2022  - More than 1 subMenu"
 category: om2
 ---
+
+**Note: 21/01/2022: I have changed a few things since this post and updated the below gitHub repo**
+[newPost](2022-01-24-nodeMenusNEd.md)
+
 <a href="https://github.com/jamesbdunlop/neMenuManager">GitHub Repo WIP Code</a>
 
 So the nodeEditor in Maya can register commands on Nodes using
