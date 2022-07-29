@@ -6,6 +6,10 @@ isPost: true
 <center>
 <h2>Just a bunch of random work at home :) Most SketchFab meshes have been decimated!</h2>
 
+Little mesh of a Platypus.
+
+<br><img src= "/assets/personal/Platypus.gif" alt="Platypus.gif"><br>
+
 Decided to make a Destiny2 ghost cause I've been playing a bit recently :P
 
 <br><img src= "/assets/personal/ghost_turntable.gif" alt="ghost_turntable.gif"><br>

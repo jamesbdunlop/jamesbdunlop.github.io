@@ -11,9 +11,16 @@ isPost: false
 <table style="width:100%">
 
 <tr><th>
+</th><td>
+<h2>RnD</h2>
+<h3>Roles Performed</h3>
+<h4>Senior Software Engineer - ongoing.</h4>
+</td></tr>
+
+<tr><th>
 <p><img style="margin-center: 10px; width: 200px; height: 200px;" src="/assets/workdone/MElephant.png" alt="MElephant.png" border="0" /></p>
 </th><td>
-<h2>In Prog: Magicians Elephant</h2>
+<h2>Magicians Elephant</h2>
 <h3>Roles Performed</h3>
 <h4>Rigging Lead</h4>
 </td></tr>
